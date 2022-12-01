@@ -404,14 +404,12 @@ html{
 footer{
     background-color: var(--gris);
     color: var(--blanco);
-    padding: 20px 0 10px 0;
+    padding: 20px 0 20px 0;
     text-align: center;
     position: relative;
     width: 100%;
 }
-footer .social_networks{
-    margin-bottom: 20px;
-}
+
 footer .social_networks a{
     color: var(--blanco);
     display: inline-block;
