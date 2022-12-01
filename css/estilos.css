@@ -73,11 +73,9 @@ html{
     background-size: cover;
     height: 100vh;
     color: var(--blanco);
-    display: flex;
     align-items: center;
 }
-.first_part .container_banner{
-    
+.first_part .container_banner{   
     padding: 20px;
     background-color: var(--negro);
     max-width: 350px;
