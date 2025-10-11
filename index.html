@@ -3,184 +3,157 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Portafolio" />
+    <meta name="author" content="Anthony Martinez" />
+    <meta name="keywords" content="html, css, responsive, javascript" />
     <title>Portafolio</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/index.css">
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
 </head>
-<body>
-    
+<body> 
     <header class="header">
-        <div >
-            <div class="logo"><a href="#">Anthony</a></div>
-            <nav id="nav" >
-                <ul>
-                    <li><a onclick="selecccionar()" href="#inicio">INICIO</a></li>
-                    <li><a onclick="selecccionar()" href="#conoceme">CONOCEME</a></li>
-                    <li><a onclick="selecccionar()" href="#cv">CURRICULUM</a></li>
-                    <li><a onclick="selecccionar()" href="#portafolio">PORTAFOLIO</a></li>
-                    <li><a onclick="selecccionar()" href="#contacto">CONTACTO</a></li>
+        <div class="header__container">
+            <div class="header__container_logo"><a class="header__name" href="#">Anthony</a></div>
+            <nav class="" id="nav" >
+                <ul class="header__list">
+                    <li><a class="header__list_item" onclick="selecccionar()" href="#inicio">INICIO</a></li>
+                    <li><a class="header__list_item" onclick="selecccionar()" href="#conoceme">CONOCEME</a></li>
+                    <li><a class="header__list_item" onclick="selecccionar()" href="#cv">CURRICULUM</a></li>
+                    <li><a class="header__list_item" onclick="selecccionar()" href="#contacto">CONTACTO</a></li>
                 </ul>
             </nav>
-            <div class="menu_nav" onclick="menu()">
-                <i class="fa-solid fa-bars"></i>
+            <div class="header__nav" onclick="menu()">
+                <i class="fa-solid fa-bars header__nav_menu"></i>
             </div>
         </div>
     </header>
     <main>
-        <section class="first_part" id="inicio">
-            <div class="container_banner">
-                <figure class="container_img" >
-                    <img src="img/hero.png" alt="">
-                </figure>
-                <h1>Anthony Martinez</h1>
-                <h2>Ingeniero Mecatronico / Desarrollador Backend</h2>
-                <div class="social_networks">
-                    <a href="https://facebook.com/anthonymarame"><i class="fa-brands fa-facebook"></i></a>
-                    <a href="https://join.skype.com/invite/k0jNBOk3kJc5"><i class="fa-brands fa-skype"></i></a>
-                    <a href="https://linkedin.com/in/anthony-martinez-amell"><i class="fa-brands fa-linkedin"></i></a>
+        <section class="home" id="inicio">
+            <div class="home__container">
+                <div class="photo container_img " >
+                    <img class="home__container_img" src="img/me.png" alt="">
+                </div>
+                <div class="info">
+                    <h1 class="home__title">Anthony Martinez</h1>
+                    <h2 class="home__subtitle">Junior Full Stack Developer</h2>
+                </div>
+                <div class="portfolio" id="portafolio">
+                    <div class="container_portfolio">
+                        <div class="proyecto">
+                            <h2>Portafolio</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="home__social-networks_container links">
+                    <a class="home__social-networks" href="https://facebook.com/anthonymarame"><i class="fa-brands fa-facebook"></i></a>
+                    <a class="home__social-networks" href="https://join.skype.com/invite/k0jNBOk3kJc5"><i class="fa-brands fa-skype"></i></a>
+                    <a class="home__social-networks" href="https://linkedin.com/in/anthony-martinez-amell"><i class="fa-brands fa-linkedin"></i></a>
                 </div>
             </div>
         </section>
-        <section class="know_me" id="conoceme">
-            <div class="container_knowme">
-                <h2>Conoceme</h2>
-                <p><span>Hola, Soy Anthony Martinez</span> autodidacta con un fuerte deseo de ampliar mis conocimientos y pasión por la programación, me encuentro actualmente en continuo aprendizaje y crecimiento profesional y personal, capaz de trabajar bajo presión manteniendo el cumplimiento de metas estipuladas por la empresa, excelente trabajo en equipo</p>
-                <div class="row">
-                    <!-- -->
-                    <div class="col">
-                        <h3>Datos personales</h3>
-                        <ul>
-                            <li><strong>Ubicacion</strong>
-                                Bogota
-                            </li>
-                            <li><strong>Nacimiento</strong>
-                                Mayo 1992
-                            </li>
-                            <li><strong>Celular</strong>
-                                301-503 5597
-                            </li>
-                            <li><strong>Email</strong>
-                                antmarame@gmail.com
-                            </li>
-                            <li>
-                                <strong>Aspiracion</strong>
-                                <span>FULL STACK DEVELOPER</span>
-                            </li>
-
+        <section class="know-me" id="conoceme">
+            <div class="know-me__container">
+                <h2 class="know-me__title">Conoceme</h2>
+                <p class="know-me__description"><span class="know-me__description-span">Hola, Soy Anthony Martinez</span> Desarrollador Web Junior con conocimientos en HTML, CSS, JavaScript, PHP y Python. Apasionado por el desarrollo backend y la creación de soluciones eficientes mediante principios de POO, con experiencia en el trabajo en equipo enfocado en el cumplimiento de metas. Destaco por mi capacidad de aprendizaje, adaptabilidad y enfoque en la mejora continua.</p>
+                <div class="know-me__info">
+                    <div class="know-me__container-info">
+                        <h3 class="know-me__title-data">Datos personales</h3>
+                        <ul class="know-me__list">
+                        <li  class="know-me__item"><strong class="know-me__field">Ubicación</strong>Bogotá-Colombia</li>
+                        <li  class="know-me__item"><strong class="know-me__field">Celular</strong>+57 301 503 5597</li>
+                        <li  class="know-me__item"><strong class="know-me__field">Email</strong>antmarame@gmail.com</li>
+                        <li  class="know-me__item"><strong class="know-me__field">Aspiración</strong><span class="know-me__objetive">Senior Backend Developer</span></li>
                         </ul>
                     </div>
-                    <!-- -->
-                    <div class="col">
-                        <h3>Intereses</h3>
-                        <div class="container_interest">
+                    <div class="know-me__interest">
+                        <h2 class="know-me__title-interest">Intereses</h2>
+                        <div class="know-me_container-interest">
                             <div class="hobbies">
-                                <i class="fa-solid fa-people-roof"></i>
-                                <span>FAMILIA</span>
+                                <i class="fa-solid fa-people-roof know-me__hobbie-icon"></i>
+                                <span class="know-me__hobbie-name">FAMILIA</span>
                             </div>
                             <div class="hobbies">
-                                <i class="fa-solid fa-gamepad"></i>
-                                <span>JUEGOS</span>
+                                <i class="fa-solid fa-laptop-code know-me__hobbie-icon"></i>
+                                <span class="know-me__hobbie-name">DEVELOP</span>
                             </div>
                             <div class="hobbies">
-                                <i class="fa-solid fa-headphones"></i>
-                                <span>MUSICA</span>
+                                <i class="fa-solid fa-headphones know-me__hobbie-icon"></i>
+                                <span class="know-me__hobbie-name">MUSICA</span>
                             </div>
                             <div class="hobbies">
-                                <i class="fa-solid fa-person-walking-luggage"></i>
-                                <span>VIAJES</span>
+                                <i class="fa-solid fa-person-walking-luggage know-me__hobbie-icon"></i>
+                                <span class="know-me__hobbie-name">VIAJES</span>
                             </div>
                             <div class="hobbies">
-                                <i class="fa-solid fa-film"></i>
-                                <span>PELICULAS</span>
+                                <i class="fa-solid fa-film know-me__hobbie-icon"></i>
+                                <span class="know-me__hobbie-name">PELICULAS</span>
                             </div>
                             <div class="hobbies">
-                                <i class="fa-solid fa-bowl-food"></i>
-                                <span>COMIDA</span>
+                                <i class="fa-solid fa-bowl-food know-me__hobbie-icon"></i>
+                                <span class="know-me__hobbie-name">COMIDA</span>
                             </div>
                             
                         </div>
                     </div>
                 </div>
-                <button>
-                    <a href="/document/Hv_Anthony_Enrique_Martinez_Amell.pdf" download="">Descargar</a>  CV <i class="fa-solid fa-download"></i>
+                <button class="know-me__download-button">
+                    <a class="know-me__link" href="/document/Hv_Anthony_Enrique_Martinez_Amell.pdf" download="">Descargar</a>  CV <i class="fa-solid fa-download"></i>
                     <span class="overlay"></span>
                 </button>
             </div>
         </section>
         <section class="curriculum" id="cv">
-            <div class="container_cv">
-                <h2> Curriculum</h2>
-                <div class="row">
-                    <div class="col left">
-                        <h3>Educacion</h3>
-                        <div class="left item">
-                            <h4>Ingenieria Mecatronica</h4>
-                            <span class="home">Institución Universitaria ITSA</span>
-                            <span class="date">2012-2014</span>
-                            <div class="connector1">
-                                <div class="circle1"></div>
+            <div class="curriculum__container">
+                <h2 class="know-me__title"> Curriculum</h2>
+                <div class="curriculum__container_content">
+                    <div class="curriculum__content curriculum__content_left">
+                        <h3 class="curriculum__title">Educacion</h3>
+                        <div class="curriculum__content_left2 curriculum__content_item">
+                            <h4 class="curriculum__content_title">Institución Universitaria ITSA</h4>
+                            <span class="curriculum__content_text">Ingenieria Mecatronica</span>
+                            <span class="curriculum__content_date">2012-2014</span> 
+                            <span class="curriculum__content_text">Tecnólogo Electrónico</span>
+                            <span class="curriculum__content_date">2010-2012</span>
+                            <span class="curriculum__content_text">Tecnico Electrónico</span>
+                            <span class="curriculum__content_date">2008-2011</span>
+                            <div class="curriculum__content_connector1">
+                                <div class="curriculum__content-circle circle_right"></div>
                             </div>
                         </div>
-                        <div class="left item">
-                            <h4>Tecnólogo Electrónico</h4>
-                            <span class="home">Institución Universitaria ITSA</span>
-                            <span class="date">2010-2012</span>
-                            <div class="connector1">
-                                <div class="circle1"></div>
-                            </div>
-                        </div>
-                        <div class="left item">
-                            <h4>Tecnico Electrónico</h4>
-                            <span class="home">Institución Universitaria ITSA</span>
-                            <span class="date">2008-2011</span>
-                            <div class="connector1">
-                                <div class="circle1"></div>
-                            </div>
-                        </div>
-
+ 
                 </div>
-                <div class="col rigth">
-                    <h3>Experiencia</h3>
-                    <div class="rigth item">
-                        <h4>Operador de Centro de Operaciones de Red</h4>
-                        <span class="home">Caribe Mar de la Costa S.A.S. E.S.P</span>
-                        <span class="date">2020-Actualidad</span>
-                        <div class="connector2">
-                            <div class="circle2"></div>
+                <div class="curriculum__content curriculum__content_rigth">
+                    <h3 class="curriculum__title">Experiencia</h3>
+                    <div class="curriculum__content_rigth2 curriculum__content_item">
+                        <h4 class="curriculum__content_title">Operador de Centro de Operaciones de Red</h4>
+                        <span class="curriculum__content_text">Caribe Mar de la Costa S.A.S. E.S.P</span>
+                        <span class="curriculum__content_date">2020-Actualidad</span>
+                        <div class="curriculum__content_connector2">
+                            <div class="curriculum__content-circle circle_left"></div>
                         </div>
                     </div>
-                    <div class="rigth item">
-                        <h4>Técnico Operador Centro de Operaciones de Red</h4>
-                        <span class="home">Electricaribe</span>
-                        <span class="date">2014-2020</span>
-                        <div class="connector2">
-                            <div class="circle2"></div>
+                    <div class="curriculum__content_rigth2 curriculum__content_item">
+                        <h4 class="curriculum__content_title">Técnico Operador Centro de Operaciones de Red</h4>
+                        <span class="curriculum__content_text">Electricaribe</span>
+                        <span class="curriculum__content_date">2014-2020</span>
+                        <div class="curriculum__content_connector2">
+                            <div class="curriculum__content-circle circle_left"></div>
                         </div>
                     </div>
-                    <div class="rigth item">
-                        <h4>Técnico instalador sistemas de seguridad electrónica</h4>
-                        <span class="home">Inversiones INDYCAR Ltda.</span>
-                        <span class="date">2012-2013</span>
-                        <div class="connector2">
-                            <div class="circle2"></div>
+                    <div class="curriculum__content_rigth2 curriculum__content_item">
+                        <h4 class="curriculum__content_title">Técnico instalador sistemas de seguridad electrónica</h4>
+                        <span class="curriculum__content_text">Inversiones INDYCAR Ltda.</span>
+                        <span class="curriculum__content_date">2012-2013</span>
+                        <div class="curriculum__content_connector2">
+                            <div class="curriculum__content-circle circle_left"></div>
                         </div>
                     </div>                    
             </div>
             </div>
-        </section>
-        <!-- seccion del portafolio  -->
-        <section class="portfolio" id="portafolio">
-            <div class="container_portfolio">
-                <div class="proyecto">
-                    <h2>Portafolio</h2>
-                </div>
-                
-
-            </div>
-        </section>
-        <section class="contact" id="contacto">
+        </section>   
+        <!-- <section class="contact" id="contacto">
             <div class="container_contact">
                 <h2>Contacto</h2>
                 <div class="row">
@@ -201,17 +174,16 @@
                     </form>
                 </div>
             </div>            
-        </section>
+        </section> -->
     </main>
-    <!-- seccion final -->
-    <footer>
-        <a href="#inicio" class="top">
+    <footer class="footer">
+        <a href="#inicio" class="footer__link-top">
             <i class="fa-solid fa-angles-up"></i>
         </a>
-        <div class="social_networks">
-            <a href="https://facebook.com/anthonymarame"><i class="fa-brands fa-facebook"></i></a>
-            <a href="https://join.skype.com/invite/k0jNBOk3kJc5"><i class="fa-brands fa-skype"></i></a>
-            <a href="https://linkedin.com/in/anthony-martinez-amell"><i class="fa-brands fa-linkedin"></i></a>
+        <div class="footer__container">
+            <a class="footer__social_networks" href="https://github.com/devanthony92"><i class="fa-brands fa-github"></i></a>
+            <a class="footer__social_networks" href="https://join.skype.com/invite/k0jNBOk3kJc5"><i class="fa-brands fa-skype"></i></a>
+            <a class="footer__social_networks" href="https://linkedin.com/in/anthony-martinez-amell"><i class="fa-brands fa-linkedin"></i></a>
         </div>
     </footer>
     <script src="js/portafolio.js"></script>

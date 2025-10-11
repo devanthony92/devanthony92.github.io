@@ -1,0 +1,135 @@
+.know-me {
+  background-color: var(--negro);
+  color: var(--blanco);
+  padding: 50px 20px;
+}
+.know-me__container {
+  font-size: var(--sm);
+  max-width: 1100px;
+  justify-items: center;
+  margin: auto;
+}
+.know-me__title {
+  font-size: var(--xg);
+  text-align: center;
+  padding: 20px 0;
+}
+.know-me__description {
+  font-size: var(--md);
+  line-height: 22px;
+  margin-bottom: 20px;
+}
+.know-me__description-span {
+  color: var(--verde);
+  font-weight: bold;
+}
+.know-me__info {
+  min-width: 300px;
+  width: 90%;
+  display: flex;
+
+  justify-items: center;
+}
+.know_me__personal-data {
+  width: 50%;
+}
+.know-me__title-data {
+  display: flex;
+  padding-bottom: 25px;
+  font-size: var(--lg);
+  justify-content: center;
+}
+.know-me__list {
+  list-style: none;
+}
+.know-me__item {
+  margin: 12px 0;
+}
+.know-me__field {
+  display: inline-block;
+  color: var(--verde);
+  min-width: 90px;
+  max-width: 100px;
+}
+.know-me__objetive {
+  background-color: var(--verde);
+  padding: 3px;
+  font-weight: bold;
+  border-radius: 5px;
+}
+.know-me__interest {
+  background-color: var(--negro);
+  color: var(--blanco);
+  border-radius: 10px;
+  margin: auto;
+}
+.know-me__title-interest {
+  display: flex;
+  padding-bottom: 25px;
+  font-size: var(--lg);
+  justify-content: center;
+}
+.know-me_container-interest {
+  width: 40vw;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+}
+.hobbies {
+  width: 100px;
+  height: 100px;
+  background-color: var(--gris);
+  border-radius: 10px;
+  margin: 0 15px 15px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: 0.5s;
+}
+.hobbies:hover {
+  background-color: var(--verde);
+}
+.know-me__hobbie-icon {
+  font-size: var(--xg);
+  margin-bottom: 10px;
+}
+.know-me__hobbie-name {
+  margin-top: 2px;
+  font-size: var(--md);
+  color: var(--blanco);
+  font-weight: bold;
+}
+.know-me__download-button {
+  text-decoration: none;
+  cursor: pointer;
+  background-color: transparent;
+  border: 2px solid var(--blanco);
+  width: fit-content;
+  display: block;
+  margin: 20px auto;
+  padding: 10px 22px;
+  font-size: var(--md);
+  color: var(--blanco);
+  position: relative;
+  z-index: 10;
+}
+.know-me__link {
+  color: var(--blanco);
+  text-decoration: none;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: var(--verde);
+  z-index: -1;
+  transition: 1s;
+}
+.know-me__download-button:hover .overlay {
+  width: 100%;
+}

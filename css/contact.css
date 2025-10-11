@@ -1,0 +1,65 @@
+.contact {
+  background-color: var(--negro);
+  color: var(--blanco);
+  padding: 50px 20px;
+}
+.contact .container_contact {
+  max-width: 1100px;
+  margin: auto;
+}
+.contact h2 {
+  font-size: var(--xg);
+  text-align: center;
+  padding: 20px 0;
+}
+.contact .row {
+  display: flex;
+  justify-content: center;
+}
+.contact .row form {
+  width: 70%;
+  padding: 10px;
+  position: relative;
+}
+.contact .row form h3 {
+  font-size: var(--lg);
+  margin-bottom: 20px;
+}
+.contact .row form input,
+.contact .row form textarea {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border: none;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background-color: var(--gris);
+  color: var(--blanco);
+  font-size: var(--md);
+}
+.contact .row form button {
+  cursor: pointer;
+  background-color: transparent;
+  border: 2px solid var(--blanco);
+  width: fit-content;
+  display: block;
+  margin: 20px auto;
+  padding: 10px 22px;
+  font-size: var(--sm);
+  color: var(--blanco);
+  position: relative;
+  z-index: 10;
+}
+.contact .row form button .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: var(--verde);
+  z-index: -1;
+  transition: 1s;
+}
+.contact .row form button:hover .overlay {
+  width: 100%;
+}

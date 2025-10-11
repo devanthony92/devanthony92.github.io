@@ -1,0 +1,21 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --negro: #1e2326;
+  --gris: #252a2e;
+  --verde: #1cb698;
+  --blanco: #fff;
+  --hospital-green: #acd9b2;
+  --sm: 1.6rem;
+  --md: 1.8rem;
+  --lg: 2rem;
+  --xg: 3rem;
+}
+html {
+  font-family: "Quicksand", sans-serif;
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
