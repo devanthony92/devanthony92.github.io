@@ -1,35 +1,43 @@
 .footer {
-  background-color: var(--gris);
-  color: var(--blanco);
-  padding: 20px 0 20px 0;
-  text-align: center;
-  position: relative;
-  width: 100%;
+	animation: fadeIn 1s ease forwards;
+	background-color: var(--gris);
+	color: var(--blanco);
+	padding: 20px 0 20px 0;
+	text-align: center;
+	position: relative;
+	width: 100%;
 }
 .footer__link-top {
-  display: block;
-  width: 50px;
-  height: 50px;
-  background-color: var(--verde);
-  color: var(--blanco);
-  position: absolute;
-  left: 50%;
-  transform: translate(-50%);
-  top: -25px;
-  border-radius: 50%;
-  line-height: 50px;
-  font-size: var(--md);
+	pointer-events: all;
+	display: block;
+	width: 50px;
+	height: 50px;
+	background-color: var(--verde);
+	color: var(--blanco);
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%);
+	top: -25px;
+	border-radius: 50%;
+	line-height: 50px;
+	font-size: var(--md);
 }
 .footer__social_networks {
-  color: var(--blanco);
-  display: inline-block;
-  text-decoration: none;
-  border: 1px solid var(--blanco);
-  border-radius: 100%;
-  width: 42px;
-  height: 42px;
-  line-height: 42px;
-  margin: 40px 5px;
-  font-size: var(--lg);
-  transition: 0.3s;
+	pointer-events: all;
+	color: var(--blanco);
+	display: inline-block;
+	text-decoration: none;
+	border: 1px solid var(--blanco);
+	border-radius: 100%;
+	width: 42px;
+	height: 42px;
+	line-height: 42px;
+	margin: 40px 5px;
+	font-size: var(--lg);
+	background: rgba(255, 255, 255, 0.05);
+	border: 1px solid rgba(255, 255, 255, 0.1);
+	border-radius: 16px;
+	backdrop-filter: blur(10px);
+	box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+	color: var(--blanco);
 }

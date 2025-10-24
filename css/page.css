@@ -1,21 +1,37 @@
 * {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
 }
 :root {
-  --negro: #1e2326;
-  --gris: #252a2e;
-  --verde: #1cb698;
-  --blanco: #fff;
-  --hospital-green: #acd9b2;
-  --sm: 1.6rem;
-  --md: 1.8rem;
-  --lg: 2rem;
-  --xg: 3rem;
+	--negro: rgba(0, 0, 0, 0.8);
+	--gris: rgba(37, 42, 46, 0.7);
+	--verde: rgba(0, 255, 204, 0.8);
+	--blanco: rgb(255, 255, 255);
+	--sm: 1.6rem;
+	--md: 1.8rem;
+	--lg: 2rem;
+	--xg: 3rem;
 }
+
 html {
-  font-family: "Quicksand", sans-serif;
-  font-size: 62.5%;
-  scroll-behavior: smooth;
+	font-family: "Quicksand", sans-serif;
+	font-size: 62.5%;
+	scroll-behavior: smooth;
+	pointer-events: none;
+	cursor: none;
+}
+
+/* Todo tu contenido debe ir por encima */
+
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+		transform: translateY(-10px);
+	}
+
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
 }

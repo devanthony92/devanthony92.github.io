@@ -1,27 +1,47 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Portafolio" />
-    <meta name="author" content="Anthony Martinez" />
-    <meta name="keywords" content="html, css, responsive, javascript" />
-    <title>Portafolio</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="css/index.css">
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
-</head>
-<body> 
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta
+			name="description"
+			content="Portafolio profesional de Anthony Martínez - Backend Developer especializado en .NET, arquitectura limpia y desarrollo de APIs escalables."
+		/>
+		<meta property="og:title" content="Anthony Martínez | Backend Developer" />
+		<meta
+			property="og:description"
+			content="Portafolio profesional de Anthony Martínez - Backend Developer especializado en .NET y arquitectura limpia."
+		/>
+		<meta property="og:type" content="website" />
+		<meta name="author" content="Anthony Martínez" />
+		<title>Backend Developer | Anthony Martínez</title>
+		<meta name="keywords" content="html, css, responsive, javascript" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+			integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+        <link rel="stylesheet" href="./css/index.css" />
+		<link rel="stylesheet" href="styles.css" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap"
+			rel="stylesheet"
+		/>
+	</head>
+	<body>
     <header class="header">
         <div class="header__container">
-            <div class="header__container_logo"><a class="header__name" href="#">Anthony</a></div>
-            <nav class="" id="nav" >
+            <div class="header__container_logo">
+                <a class="header__name" href="#">Anthony</a>
+            </div>
+            <nav id="nav">
                 <ul class="header__list">
-                    <li><a class="header__list_item" onclick="selecccionar()" href="#inicio">INICIO</a></li>
-                    <li><a class="header__list_item" onclick="selecccionar()" href="#conoceme">CONOCEME</a></li>
-                    <li><a class="header__list_item" onclick="selecccionar()" href="#cv">CURRICULUM</a></li>
-                    <li><a class="header__list_item" onclick="selecccionar()" href="#contacto">CONTACTO</a></li>
+                    <li><a class="header__list_item" href="#inicio">INICIO</a></li>
+                    <li><a class="header__list_item" href="#conoceme">CONÓCEME</a></li>
+                    <li><a class="header__list_item" href="#cv">CURRICULUM</a></li>
+                    <li><a class="header__list_item" href="#contacto">CONTACTO</a></li>
                 </ul>
             </nav>
             <div class="header__nav" onclick="menu()">
@@ -34,39 +54,97 @@
             <div class="home__container">
                 <div class="photo container_img " >
                     <img class="home__container_img" src="img/me.png" alt="">
-                </div>
-                <div class="info">
+                    <div >
                     <h1 class="home__title">Anthony Martinez</h1>
                     <h2 class="home__subtitle">Junior Full Stack Developer</h2>
                 </div>
-                <div class="portfolio" id="portafolio">
-                    <div class="container_portfolio">
-                        <div class="proyecto">
-                            <h2>Portafolio</h2>
-                        </div>
-                    </div>
                 </div>
+                
+<section class="projects" id="proyectos">
+  <h2 class="projects__title">Proyectos Destacados</h2>
+  <p class="projects__subtitle">
+    Una selección de los proyectos que reflejan mi experiencia, enfoque técnico y pasión por crear soluciones escalables.
+  </p>
+
+  <div class="projects__grid">
+    <!-- Proyecto 1 -->
+    <article class="project-card">
+      <div class="project-card__img">
+        <img src="img/proyecto1.png" alt="Proyecto 1 - API REST Node.js" loading="lazy" />
+      </div>
+      <div class="project-card__content">
+        <h3 class="project-card__title">API REST - Node.js & Express</h3>
+        <p class="project-card__description">
+          API escalable desarrollada con Node.js, Express y MongoDB, con autenticación JWT y arquitectura limpia.
+        </p>
+        <div class="project-card__tags">
+          <span>Node.js</span>
+          <span>Express</span>
+          <span>MongoDB</span>
+        </div>
+        <div class="project-card__links">
+          <a href="https://github.com/usuario/proyecto1" target="_blank" class="btn-outline">Repositorio</a>
+          <a href="https://proyecto1-demo.com" target="_blank" class="btn-solid">Ver Demo</a>
+        </div>
+      </div>
+    </article>
+
+    <!-- Proyecto 2 -->
+    <article class="project-card">
+      <div class="project-card__img">
+        <img src="img/proyecto2.png" alt="Proyecto 2 - Dashboard React" loading="lazy" />
+      </div>
+      <div class="project-card__content">
+        <h3 class="project-card__title">Panel Administrativo - React.js</h3>
+        <p class="project-card__description">
+          Dashboard moderno con React, Hooks y Chart.js, implementando autenticación y control de roles por JWT.
+        </p>
+        <div class="project-card__tags">
+          <span>React</span>
+          <span>JWT</span>
+          <span>Chart.js</span>
+        </div>
+        <div class="project-card__links info">
+          <a href="https://github.com/usuario/proyecto2" target="_blank" class="btn-outline">Repositorio</a>
+          <a href="https://proyecto2-demo.com" target="_blank" class="btn-solid">Ver Demo</a>
+        </div>
+      </div>
+    </article>
+
+    <!-- Puedes duplicar más project-card aquí -->
+  </div>
+</section>
+
                 <div class="home__social-networks_container links">
-                    <a class="home__social-networks" href="https://facebook.com/anthonymarame"><i class="fa-brands fa-facebook"></i></a>
-                    <a class="home__social-networks" href="https://join.skype.com/invite/k0jNBOk3kJc5"><i class="fa-brands fa-skype"></i></a>
-                    <a class="home__social-networks" href="https://linkedin.com/in/anthony-martinez-amell"><i class="fa-brands fa-linkedin"></i></a>
+                    <a class="footer__social_networks" href="https://github.com/devanthony92"><i class="fa-brands fa-github"></i><span class="overlay__links"></span></a>
+            <a class="footer__social_networks" href="https://linkedin.com/in/anthony-martinez-amell"><i class="fa-brands fa-linkedin"></i><span class="overlay__links"></span></a>
                 </div>
             </div>
         </section>
         <section class="know-me" id="conoceme">
             <div class="know-me__container">
-                <h2 class="know-me__title">Conoceme</h2>
+                <h2 class="know-me__title">About me</h2>
                 <p class="know-me__description"><span class="know-me__description-span">Hola, Soy Anthony Martinez</span> Desarrollador Web Junior con conocimientos en HTML, CSS, JavaScript, PHP y Python. Apasionado por el desarrollo backend y la creación de soluciones eficientes mediante principios de POO, con experiencia en el trabajo en equipo enfocado en el cumplimiento de metas. Destaco por mi capacidad de aprendizaje, adaptabilidad y enfoque en la mejora continua.</p>
                 <div class="know-me__info">
-                    <div class="know-me__container-info">
-                        <h3 class="know-me__title-data">Datos personales</h3>
-                        <ul class="know-me__list">
-                        <li  class="know-me__item"><strong class="know-me__field">Ubicación</strong>Bogotá-Colombia</li>
-                        <li  class="know-me__item"><strong class="know-me__field">Celular</strong>+57 301 503 5597</li>
-                        <li  class="know-me__item"><strong class="know-me__field">Email</strong>antmarame@gmail.com</li>
-                        <li  class="know-me__item"><strong class="know-me__field">Aspiración</strong><span class="know-me__objetive">Senior Backend Developer</span></li>
-                        </ul>
-                    </div>
+                    <table class="know-me__container-info">
+                        <caption class="know-me__title-data">Datos personales</caption>
+                            <tr>
+                                <th class="know-me__item"><strong >Ubicación</strong></th>
+                                <td class="know-me__field">Bogotá-Colombia</td>
+                            </tr>
+                            <tr>
+                                <th class="know-me__item"><strong >Celular</strong></th>
+                                <td class="know-me__field">+57 301 503 5597</td>
+                            </tr>
+                            <tr>
+                                <th class="know-me__item"><strong >Email</strong></th>
+                                <td class="know-me__field">antmarame@gmail.com</td>
+                            </tr>
+                            <tr>
+                                <th class="know-me__item"><strong >Aspiración</strong></th>
+                                <td class="know-me__field"><span class="know-me__objetive">Senior Backend Developer</span></td>
+                            </tr>
+                    </table>
                     <div class="know-me__interest">
                         <h2 class="know-me__title-interest">Intereses</h2>
                         <div class="know-me_container-interest">
@@ -122,7 +200,6 @@
                                 <div class="curriculum__content-circle circle_right"></div>
                             </div>
                         </div>
- 
                 </div>
                 <div class="curriculum__content curriculum__content_rigth">
                     <h3 class="curriculum__title">Experiencia</h3>
@@ -153,39 +230,40 @@
             </div>
             </div>
         </section>   
-        <!-- <section class="contact" id="contacto">
+        <section class="contact" id="contacto">
             <div class="container_contact">
-                <h2>Contacto</h2>
+                <h2 class="know-me__title">Contacto</h2>
                 <div class="row">
-                    <form id="form" action="https://formsubmit.co/29d0b3828149daa2fd12904676952bea" method="POST">
-                        <h3>Deje aqui su informacion y te contacto</h3>
-                        <input type="text" name="nombre" id="inputnombre" placeholder="Ingrese su nombre">
-                        <input type="text" name="correo" id="inputcorreo" placeholder="Ingrese su Email">
-                        <input type="text" name="asunto" id="inputasunto" placeholder="Escriba aqui el asunto">
-                        <textarea name="mensaje" id="inputmensaje" cols="30" rows="5" placeholder="Deje un mensaje y yo lo contactare"></textarea>
-                        <button  type="submit">
+                    <form class="form" id="form" action="#" method="POST">
+                        <h3 class="form__title" >Deje aqui su informacion y le contactare</h3>
+                        <label class="form__label" for="inputnombre">Nombre</label>
+                        <input  class="form__input" type="text" name="nombre" id="inputnombre" placeholder="Ingrese su nombre">
+                        <label class="form__label" for="inputcorreo">Correo</label>
+                        <input  class="form__input" type="text" name="correo" id="inputcorreo" placeholder="Ingrese su Email">
+                        <label class="form__label" for="inputasunto">Asunto</label>
+                        <input  class="form__input" type="text" name="asunto" id="inputasunto" placeholder="Escriba aqui el asunto">
+                        <label class="form__label" for="inputmensaje">Mensaje</label>
+                        <textarea  class="form__input" name="mensaje" id="inputmensaje" cols="30" rows="5" placeholder="Deje un mensaje y yo lo contactare"></textarea>
+                        <button class="form__button"  type="submit">
                             Enviar 
                             <i class="fa-solid fa-paper-plane"></i>
                             <span class="overlay"></span>
                         </button>
-
-                        <input type="hidden" name="_next" value="http://127.0.0.1:5500/index.html">
-                        <input type="hidden" name="_captcha" value="false">
                     </form>
                 </div>
             </div>            
-        </section> -->
+        </section>
     </main>
     <footer class="footer">
         <a href="#inicio" class="footer__link-top">
             <i class="fa-solid fa-angles-up"></i>
         </a>
         <div class="footer__container">
-            <a class="footer__social_networks" href="https://github.com/devanthony92"><i class="fa-brands fa-github"></i></a>
-            <a class="footer__social_networks" href="https://join.skype.com/invite/k0jNBOk3kJc5"><i class="fa-brands fa-skype"></i></a>
-            <a class="footer__social_networks" href="https://linkedin.com/in/anthony-martinez-amell"><i class="fa-brands fa-linkedin"></i></a>
+            
+            <a class="footer__social_networks" href="https://github.com/devanthony92"><i class="fa-brands fa-github"></i><span class="overlay__links"></span></a>
+            <a class="footer__social_networks" href="https://linkedin.com/in/anthony-martinez-amell"><i class="fa-brands fa-linkedin"></i><span class="overlay__links"></span></a>
         </div>
     </footer>
-    <script src="js/portafolio.js"></script>
-</body>
+		<script type="module" src="./js/index.js"></script>
+	</body>
 </html>

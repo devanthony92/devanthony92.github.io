@@ -1,65 +1,147 @@
 .contact {
-  background-color: var(--negro);
-  color: var(--blanco);
-  padding: 50px 20px;
+	animation: fadeIn 1s ease forwards;
+	display: flex;
+	flex-direction: column;
+	margin-top: 50px;
+	height: 100%;
+	color: var(--blanco);
+	align-items: center;
+	padding: 5px;
 }
-.contact .container_contact {
-  max-width: 1100px;
-  margin: auto;
+
+.form {
+	width: 100%;
+	max-width: 600px;
+	margin: 3rem auto;
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+	padding: 2rem;
+	background: rgba(255, 255, 255, 0.05);
+	border: 1px solid rgba(255, 255, 255, 0.1);
+	border-radius: 16px;
+	backdrop-filter: blur(10px);
+	box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+	color: var(--blanco);
+	animation: fadeIn 1s ease forwards;
 }
-.contact h2 {
-  font-size: var(--xg);
-  text-align: center;
-  padding: 20px 0;
+
+.form__title {
+	text-align: center;
+	font-size: var(--lg);
+	color: var(--blanco);
+	margin-bottom: 1rem;
+	letter-spacing: 1px;
 }
-.contact .row {
-  display: flex;
-  justify-content: center;
+
+/* Etiquetas */
+.form__label {
+	font-size: var(--md);
+	font-weight: 500;
+	color: var(--verde);
+	margin-top: 0.5rem;
 }
-.contact .row form {
-  width: 70%;
-  padding: 10px;
-  position: relative;
+
+/* Inputs y textarea */
+.form__input {
+	background: rgba(255, 255, 255, 0.08);
+	border: 1px solid rgba(255, 255, 255, 0.2);
+	color: var(--blanco);
+	padding: 12px 15px;
+	border-radius: 8px;
+	font-size: var(--md);
+	width: 100%;
+	transition: border 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
 }
-.contact .row form h3 {
-  font-size: var(--lg);
-  margin-bottom: 20px;
+
+.form__input::placeholder {
+	color: rgba(255, 255, 255, 0.6);
 }
-.contact .row form input,
-.contact .row form textarea {
-  display: block;
-  width: 100%;
-  padding: 10px;
-  border: none;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  background-color: var(--gris);
-  color: var(--blanco);
-  font-size: var(--md);
+
+.form__input:focus {
+	outline: none;
+	border: 1px solid var(--verde);
+	box-shadow: 0 0 12px rgba(127, 255, 212, 0.4);
+	background: rgba(255, 255, 255, 0.12);
 }
-.contact .row form button {
-  cursor: pointer;
-  background-color: transparent;
-  border: 2px solid var(--blanco);
-  width: fit-content;
-  display: block;
-  margin: 20px auto;
-  padding: 10px 22px;
-  font-size: var(--sm);
-  color: var(--blanco);
-  position: relative;
-  z-index: 10;
+
+/* Botón con overlay moderno */
+.form__button {
+	position: relative;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	gap: 0.5rem;
+	margin-top: 1rem;
+	padding: 12px 26px;
+	font-size: var(--md);
+	font-weight: 600;
+	color: var(--blanco);
+	background: transparent;
+	border: 2px solid var(--verde);
+	border-radius: 8px;
+	cursor: pointer;
+	overflow: hidden;
+	transition: transform 0.3s ease, color 0.3s ease;
+	pointer-events: all;
+	z-index: 1;
 }
-.contact .row form button .overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 0;
-  height: 100%;
-  background-color: var(--verde);
-  z-index: -1;
-  transition: 1s;
+
+form button:hover {
+	transform: scale(1.05);
+	color: var(--negro);
 }
-.contact .row form button:hover .overlay {
-  width: 100%;
+
+/* Overlay animado en el botón */
+form button::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: -100%;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(135deg, var(--verde), #7fffd4);
+	transition: left 0.5s ease-in-out;
+	z-index: -1;
+}
+
+form button:hover::before {
+	left: 0;
+}
+
+/* Ícono */
+.form__button i {
+	font-size: 1rem;
+	transition: transform 0.3s ease;
+}
+
+form button:hover i {
+	transform: translateX(4px);
+}
+
+/* Animación de entrada */
+/* @keyframes fadeIn {
+	from {
+		opacity: 0;
+		transform: translateY(30px);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+} */
+
+/* Responsividad */
+@media (max-width: 480px) {
+	form {
+		padding: 1.5rem;
+	}
+
+	form h3 {
+		font-size: 1.2rem;
+	}
+
+	.form__button {
+		font-size: 0.95rem;
+	}
 }
