@@ -23,247 +23,742 @@
 			crossorigin="anonymous"
 			referrerpolicy="no-referrer"
 		/>
-        <link rel="stylesheet" href="./css/index.css" />
-		<link rel="stylesheet" href="styles.css" />
+		<link rel="stylesheet" href="./css/index.css" />
 		<link
 			href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap"
 			rel="stylesheet"
 		/>
 	</head>
 	<body>
-    <header class="header">
-        <div class="header__container">
-            <div class="header__container_logo">
-                <a class="header__name" href="#">Anthony</a>
-            </div>
-            <nav id="nav">
-                <ul class="header__list">
-                    <li><a class="header__list_item" href="#inicio">INICIO</a></li>
-                    <li><a class="header__list_item" href="#conoceme">CONÓCEME</a></li>
-                    <li><a class="header__list_item" href="#cv">CURRICULUM</a></li>
-                    <li><a class="header__list_item" href="#contacto">CONTACTO</a></li>
-                </ul>
-            </nav>
-            <div class="header__nav" onclick="menu()">
-                <i class="fa-solid fa-bars header__nav_menu"></i>
-            </div>
-        </div>
-    </header>
-    <main>
-        <section class="home" id="inicio">
-            <div class="home__container">
-                <div class="photo container_img " >
-                    <img class="home__container_img" src="img/me.png" alt="">
-                    <div >
-                    <h1 class="home__title">Anthony Martinez</h1>
-                    <h2 class="home__subtitle">Junior Full Stack Developer</h2>
-                </div>
-                </div>
-                
-<section class="projects" id="proyectos">
-  <h2 class="projects__title">Proyectos Destacados</h2>
-  <p class="projects__subtitle">
-    Una selección de los proyectos que reflejan mi experiencia, enfoque técnico y pasión por crear soluciones escalables.
-  </p>
+		<header class="header">
+			<div class="header__container">
+				<div class="header__container_logo">
+					<a class="header__name" href="#">Anthony</a>
+				</div>
+				<nav id="nav">
+					<ul class="header__list">
+						<li><a class="header__list_item" href="#inicio">INICIO</a></li>
+						<li><a class="header__list_item" href="#conoceme">CONÓCEME</a></li>
+						<li><a class="header__list_item" href="#cv">CURRICULUM</a></li>
+						<li><a class="header__list_item" href="#contacto">CONTACTO</a></li>
+					</ul>
+				</nav>
+				<div class="header__nav" onclick="menu()">
+					<i class="fa-solid fa-bars header__nav_menu"></i>
+				</div>
+			</div>
+		</header>
+		<main>
+			<section class="home" id="inicio">
+				<div class="home__container">
+					<div class="container_img photo__grid">
+						<img class="home__container_img" src="img/me.png" alt="" />
+						<div>
+							<h1 class="home__title">Anthony Martinez</h1>
+							<h2 class="home__subtitle">Junior Full Stack Developer</h2>
+						</div>
+					</div>
+					<div class="projects main__grid" id="proyectos">
+						<h2 class="know-me__title">Proyectos Destacados</h2>
+						<p class="projects__subtitle">
+							Una selección de los proyectos que reflejan mi experiencia,
+							enfoque técnico y pasión por crear soluciones escalables.
+						</p>
 
-  <div class="projects__grid">
-    <!-- Proyecto 1 -->
-    <article class="project-card">
-      <div class="project-card__img">
-        <img src="img/proyecto1.png" alt="Proyecto 1 - API REST Node.js" loading="lazy" />
-      </div>
-      <div class="project-card__content">
-        <h3 class="project-card__title">API REST - Node.js & Express</h3>
-        <p class="project-card__description">
-          API escalable desarrollada con Node.js, Express y MongoDB, con autenticación JWT y arquitectura limpia.
-        </p>
-        <div class="project-card__tags">
-          <span>Node.js</span>
-          <span>Express</span>
-          <span>MongoDB</span>
-        </div>
-        <div class="project-card__links">
-          <a href="https://github.com/usuario/proyecto1" target="_blank" class="btn-outline">Repositorio</a>
-          <a href="https://proyecto1-demo.com" target="_blank" class="btn-solid">Ver Demo</a>
-        </div>
-      </div>
-    </article>
+						<div class="projects__grid">
+							<!-- Proyecto 1 -->
+							<article class="project-card">
+								<div data-modal-open="project1" class="project-card__img">
+									<img
+										class=".project-card__img-img"
+										src="https://img.youtube.com/vi/gWX5_k63aaU/hqdefault.jpg"
+										alt="Vista previa del video"
+									/>
+								</div>
+								<div class="project-card__content">
+									<h3 class="project-card__title">
+										Sistema de Gestión de Productos y Usuarios
+									</h3>
+									<p class="project-card__description">
+										Desarrollé una plataforma administrativa completa en Laravel
+										diseñada para optimizar la gestión de productos, usuarios y
+										permisos dentro de una aplicación empresarial. El sistema
+										implementa un control de acceso basado en roles (RBAC)
+										mediante el paquete Spatie Laravel Permission, garantizando
+										una administración segura, escalable y flexible. Además,
+										cuenta con una interfaz moderna, responsive y amigable,
+										construida con TailwindCSS y componentes dinámicos de Blade.
+									</p>
+									<div class="project-card__tags">
+										<span class="project-card__tags-span">Laravel (PHP)</span>
+										<span class="project-card__tags-span"
+											>Laravel Permission</span
+										>
+										<span class="project-card__tags-span">Laravel Breeze</span>
+										<span class="project-card__tags-span">MySQL</span>
+										<span class="project-card__tags-span">Animate.css</span>
+										<span class="project-card__tags-span"
+											>Blade, TailwindCSS</span
+										>
+									</div>
+									<div class=".project-card__links">
+										<button
+											class="btn-outline"
+											type="button"
+											onclick="window.open('https://github.com/devanthony92/laravel_crud_rol.git', '_blank')"
+										>
+											Ver Repositorio
+										</button>
+										<button data-modal-open="demoProject1" class="btn-outline">
+											Ver Demo
+										</button>
+									</div>
+								</div>
+							</article>
+							<!-- Proyecto 2 -->
+							<article class="project-card">
+								<div data-modal-open="project2" class="project-card__img">
+									<img
+										class=".project-card__img-img"
+										src="https://img.youtube.com/vi/rN245AUXSYc/hqdefault.jpg"
+										alt="Vista previa del video"
+									/>
+								</div>
+								<div class="project-card__content">
+									<h3 class="project-card__title">
+										Sistema de Envío de Correos Automatizado con FastAPI y
+										SendGrid
+									</h3>
+									<p class="project-card__description">
+										Este proyecto permite gestionar y enviar correos
+										electrónicos personalizados de forma eficiente y
+										automatizada mediante la API de SendGrid. Incluye un módulo
+										CRUD para administrar plantillas HTML reutilizables,
+										facilitando la comunicación masiva o transaccional con los
+										usuarios.
+									</p>
+									<div class="project-card__tags">
+										<span class="project-card__tags-span"
+											>FastAPI (Python)</span
+										>
+										<span class="project-card__tags-span">SendGrid API</span>
+										<span class="project-card__tags-span">PostgreSQL</span>
+										<span class="project-card__tags-span">SQLAlchemy</span>
+										<span class="project-card__tags-span">Swagger UI</span>
+										<span class="project-card__tags-span">Render</span>
+									</div>
+									<div class=".project-card__links">
+										<button
+											class="btn-outline"
+											type="button"
+											onclick="window.open('https://github.com/devanthony92/notification_service.git', '_blank')"
+										>
+											Ver Repositorio
+										</button>
+										<button
+											class="btn-outline"
+											type="button"
+											onclick="window.open('https://notification-service-am7j.onrender.com/docs', '_blank')"
+										>
+											Ver en Render
+										</button>
+										<button data-modal-open="demoProject2" class="btn-outline">
+											Ver Demo
+										</button>
+									</div>
+								</div>
+							</article>
+							<!-- Proyecto 3
+							
+							<article id="project3"  class="project-card">
+								<div class="project-card__img">
+									<img class=".project-card__img-img"
+										src= "img/proyecto2.png"
+										alt="Proyecto 2 - Dashboard React"
+										loading="lazy"
+									/>
+								</div>
+								<div class="project-card__content">
+									<h3 class="project-card__title">
+										Panel Administrativo - React.js
+									</h3>
+									<p class="project-card__description">
+										Dashboard moderno con React, Hooks y Chart.js, implementando
+										autenticación y control de roles por JWT.
+									</p>
+									<div class="project-card__tags">
+										<span class="project-card__tags-span">React</span>
+										<span class="project-card__tags-span">JWT</span>
+										<span class="project-card__tags-span">Chart.js</span>
+									</div>
+									<div class=".project-card__links">
+										<button
+											class="btn-outline"
+											type="button"
+											onclick="window.open('https://github.com/devanthony92/notification_service.git', '_blank')"
+										>
+											Ver Repositorio
+										</button>
+										<button class="btn-outline" id="verdemo3">Ver Demo</button>
+									</div>
+								</div>
+							</article> 
+						-->
+						</div>
+					</div>
+					<div class="home__social-networks_container aside__grid">
+						<a
+							target="_blank"
+							class="footer__social_networks"
+							href="https://github.com/devanthony92"
+							><i class="fa-brands fa-github"></i>
+							<span class="overlay__links"></span>
+						</a>
+						<a
+							target="_blank"
+							class="footer__social_networks"
+							href="https://wa.me/+573015035597"
+							><i class="fa-brands fa-whatsapp"></i>
+							<span class="overlay__links"></span>
+						</a>
 
-    <!-- Proyecto 2 -->
-    <article class="project-card">
-      <div class="project-card__img">
-        <img src="img/proyecto2.png" alt="Proyecto 2 - Dashboard React" loading="lazy" />
-      </div>
-      <div class="project-card__content">
-        <h3 class="project-card__title">Panel Administrativo - React.js</h3>
-        <p class="project-card__description">
-          Dashboard moderno con React, Hooks y Chart.js, implementando autenticación y control de roles por JWT.
-        </p>
-        <div class="project-card__tags">
-          <span>React</span>
-          <span>JWT</span>
-          <span>Chart.js</span>
-        </div>
-        <div class="project-card__links info">
-          <a href="https://github.com/usuario/proyecto2" target="_blank" class="btn-outline">Repositorio</a>
-          <a href="https://proyecto2-demo.com" target="_blank" class="btn-solid">Ver Demo</a>
-        </div>
-      </div>
-    </article>
+						<a
+							target="_blank"
+							class="footer__social_networks"
+							href="https://linkedin.com/in/anthony-martinez-amell"
+							><i class="fa-brands fa-linkedin"></i>
+							<span class="overlay__links"></span>
+						</a>
+					</div>
+				</div>
+			</section>
+			<section class="know-me" id="conoceme">
+				<div class="know-me__container">
+					<h2 class="know-me__title">About me</h2>
+					<p class="know-me__description">
+						<span class="know-me__description-span"
+							>Hola, Soy Anthony Martinez</span
+						>
+						Desarrollador Web Junior con conocimientos en HTML, CSS, JavaScript,
+						PHP y Python. Apasionado por el desarrollo backend y la creación de
+						soluciones eficientes mediante principios de POO, con experiencia en
+						el trabajo en equipo enfocado en el cumplimiento de metas. Destaco
+						por mi capacidad de aprendizaje, adaptabilidad y enfoque en la
+						mejora continua.
+					</p>
+					<div class="know-me__info">
+						<table class="know-me__container-info">
+							<caption class="know-me__title-data">
+								<strong>Datos personales</strong>
+							</caption>
+							<tr>
+								<th class="know-me__item"><strong>Ubicación</strong></th>
+								<td class="know-me__field">Bogotá-Colombia</td>
+							</tr>
+							<tr>
+								<th class="know-me__item"><strong>Celular</strong></th>
+								<td class="know-me__field">+57 301 503 5597</td>
+							</tr>
+							<tr>
+								<th class="know-me__item"><strong>Email</strong></th>
+								<td class="know-me__field">antmarame@gmail.com</td>
+							</tr>
+							<tr>
+								<th class="know-me__item"><strong>Aspiración</strong></th>
+								<td class="know-me__field">
+									<span class="know-me__objetive"
+										>Senior Backend Developer</span
+									>
+								</td>
+							</tr>
+						</table>
+						<div class="know-me__interest">
+							<h2 class="know-me__title-interest">Intereses</h2>
+							<div class="know-me_container-interest">
+								<div class="hobbies">
+									<i class="fa-solid fa-people-roof know-me__hobbie-icon"></i>
+									<span class="know-me__hobbie-name">FAMILIA</span>
+								</div>
+								<div class="hobbies">
+									<i class="fa-solid fa-laptop-code know-me__hobbie-icon"></i>
+									<span class="know-me__hobbie-name">DEVELOP</span>
+								</div>
+								<div class="hobbies">
+									<i class="fa-solid fa-headphones know-me__hobbie-icon"></i>
+									<span class="know-me__hobbie-name">MUSICA</span>
+								</div>
+								<div class="hobbies">
+									<i
+										class="fa-solid fa-person-walking-luggage know-me__hobbie-icon"
+									></i>
+									<span class="know-me__hobbie-name">VIAJES</span>
+								</div>
+								<div class="hobbies">
+									<i class="fa-solid fa-film know-me__hobbie-icon"></i>
+									<span class="know-me__hobbie-name">PELICULAS</span>
+								</div>
+								<div class="hobbies">
+									<i class="fa-solid fa-bowl-food know-me__hobbie-icon"></i>
+									<span class="know-me__hobbie-name">COMIDA</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<button class="know-me__download-button">
+						<a
+							class="know-me__link"
+							href="/document/Hv_Anthony_Enrique_Martinez_Amell.pdf"
+							download=""
+							>Descargar</a
+						>
+						CV <i class="fa-solid fa-download"></i>
+						<span class="overlay"></span>
+					</button>
+				</div>
+			</section>
+			<section class="curriculum" id="cv">
+				<div class="curriculum__container">
+					<h2 class="know-me__title">Curriculum</h2>
+					<div class="curriculum__container_content">
+						<div class="curriculum__content curriculum__content_left">
+							<!--Educacion -->
+							<h3 class="curriculum__title">Educacion</h3>
+							<div class="curriculum__content_left2 curriculum__content_item">
+								<h4 class="curriculum__content_title">Tripleten</h4>
+								<span class="curriculum__content_text"
+									>Bootcamp de desarrollo Web</span
+								>
+								<div class="curriculum__content_connector1">
+									<div class="curriculum__content-circle circle_right"></div>
+								</div>
+							</div>
+							<div class="curriculum__content_left2 curriculum__content_item">
+								<h4 class="curriculum__content_title">Platzi</h4>
+								<span class="curriculum__content_text">Laravel</span>
+								<span class="curriculum__content_text">MariaDB y MySQL</span>
+								<span class="curriculum__content_text">PHP</span>
+								<span class="curriculum__content_text">Frontend Developer</span>
+								<div class="curriculum__content_connector1">
+									<div class="curriculum__content-circle circle_right"></div>
+								</div>
+							</div>
+							<div class="curriculum__content_left2 curriculum__content_item">
+								<h4 class="curriculum__content_title">
+									Institución Universitaria ITSA
+								</h4>
+								<span class="curriculum__content_text"
+									>Ingenieria Mecatronica</span
+								>
+								<span class="curriculum__content_date">2012-2014</span>
+								<span class="curriculum__content_text"
+									>Tecnólogo Electrónico</span
+								>
+								<span class="curriculum__content_date">2010-2012</span>
+								<span class="curriculum__content_text"
+									>Tecnico Electrónico</span
+								>
+								<span class="curriculum__content_date">2008-2011</span>
+								<div class="curriculum__content_connector1">
+									<div class="curriculum__content-circle circle_right"></div>
+								</div>
+							</div>
+						</div>
+						<div class="curriculum__content curriculum__content_rigth">
+							<!--Experiencia -->
+							<h3 class="curriculum__title">Experiencia</h3>
+							<div class="curriculum__content_rigth2 curriculum__content_item">
+								<h4 class="curriculum__content_title">
+									Desarrollador Backend Junior
+								</h4>
+								<span class="curriculum__content_text">Proyecto Freelance</span>
+								<span class="curriculum__content_date">Actualmente</span>
+								<div class="curriculum__content_connector2">
+									<div class="curriculum__content-circle circle_left"></div>
+								</div>
+							</div>
+							<div class="curriculum__content_rigth2 curriculum__content_item">
+								<h4 class="curriculum__content_title">
+									Operador JR de Centro de Operaciones de Red
+								</h4>
+								<span class="curriculum__content_text"
+									>Caribe Mar de la Costa S.A.S. E.S.P</span
+								>
+								<span class="curriculum__content_date">2020-2025</span>
+								<div class="curriculum__content_connector2">
+									<div class="curriculum__content-circle circle_left"></div>
+								</div>
+							</div>
+							<div class="curriculum__content_rigth2 curriculum__content_item">
+								<h4 class="curriculum__content_title">
+									Técnico Operador Centro de Operaciones de Red
+								</h4>
+								<span class="curriculum__content_text">Electricaribe</span>
+								<span class="curriculum__content_date">2014-2020</span>
+								<div class="curriculum__content_connector2">
+									<div class="curriculum__content-circle circle_left"></div>
+								</div>
+							</div>
+							<div class="curriculum__content_rigth2 curriculum__content_item">
+								<h4 class="curriculum__content_title">
+									Técnico instalador sistemas de seguridad electrónica
+								</h4>
+								<span class="curriculum__content_text"
+									>Inversiones INDYCAR Ltda.</span
+								>
+								<span class="curriculum__content_date">2012-2013</span>
+								<div class="curriculum__content_connector2">
+									<div class="curriculum__content-circle circle_left"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- Modal experiencia 1 -->
+				</div>
+			</section>
+			<section class="contact" id="contacto">
+				<div class="container_contact">
+					<h2 class="know-me__title">Contacto</h2>
+					<div class="row">
+						<div class="coming-soon">
+							<h3 class="coming-soon__title">🚧 En construcción</h3>
+							<p class="coming-soon__text">
+								Estoy trabajando en esta sección para ofrecerte una forma
+								directa de contactarme.
+								<span class="highlight"
+									>Pronto podrás enviarme tus mensajes aquí.</span
+								>
+							</p>
+							<div class="loader"></div>
+							<p class="coming-soon__note">Disponible muy pronto ✨</p>
+						</div>
+					</div>
+				</div>
 
-    <!-- Puedes duplicar más project-card aquí -->
-  </div>
-</section>
+				<!-- <div class="container_contact">
+					<h2 class="know-me__title">Contacto</h2>
+					<div class="row">
+						<form class="form" id="form" action="#" method="POST">
+							<h3 class="form__title">
+								Deje aqui su informacion y le contactare
+							</h3>
+							<label class="form__label" for="inputnombre">Nombre</label>
+							<input
+								class="form__input"
+								type="text"
+								name="nombre"
+								id="inputnombre"
+								placeholder="Ingrese su nombre"
+							/>
+							<label class="form__label" for="inputcorreo">Correo</label>
+							<input
+								class="form__input"
+								type="text"
+								name="correo"
+								id="inputcorreo"
+								placeholder="Ingrese su Email"
+							/>
+							<label class="form__label" for="inputasunto">Asunto</label>
+							<input
+								class="form__input"
+								type="text"
+								name="asunto"
+								id="inputasunto"
+								placeholder="Escriba aqui el asunto"
+							/>
+							<label class="form__label" for="inputmensaje">Mensaje</label>
+							<textarea
+								class="form__input"
+								name="mensaje"
+								id="inputmensaje"
+								cols="30"
+								rows="5"
+								placeholder="Deje un mensaje y yo lo contactare"
+							></textarea>
+							<button class="form__button" type="submit">
+								Enviar
+								<i class="fa-solid fa-paper-plane"></i>
+								<span class="overlay"></span>
+							</button>
+						</form>
+					</div>
+				</div> -->
+			</section>
+		</main>
+		<footer class="footer">
+			<a href="#inicio" class="footer__link-top">
+				<i class="fa-solid fa-angles-up"></i>
+			</a>
+			<div class="footer__container">
+				<a
+					target="_blank"
+					class="footer__social_networks"
+					href="https://github.com/devanthony92"
+					><i class="fa-brands fa-github"></i>
+					<span class="overlay__links"></span>
+				</a>
+				<a
+					target="_blank"
+					class="footer__social_networks"
+					href="https://wa.me/+573015035597"
+					><i class="fa-brands fa-whatsapp"></i>
+					<span class="overlay__links"></span>
+				</a>
 
-                <div class="home__social-networks_container links">
-                    <a class="footer__social_networks" href="https://github.com/devanthony92"><i class="fa-brands fa-github"></i><span class="overlay__links"></span></a>
-            <a class="footer__social_networks" href="https://linkedin.com/in/anthony-martinez-amell"><i class="fa-brands fa-linkedin"></i><span class="overlay__links"></span></a>
-                </div>
-            </div>
-        </section>
-        <section class="know-me" id="conoceme">
-            <div class="know-me__container">
-                <h2 class="know-me__title">About me</h2>
-                <p class="know-me__description"><span class="know-me__description-span">Hola, Soy Anthony Martinez</span> Desarrollador Web Junior con conocimientos en HTML, CSS, JavaScript, PHP y Python. Apasionado por el desarrollo backend y la creación de soluciones eficientes mediante principios de POO, con experiencia en el trabajo en equipo enfocado en el cumplimiento de metas. Destaco por mi capacidad de aprendizaje, adaptabilidad y enfoque en la mejora continua.</p>
-                <div class="know-me__info">
-                    <table class="know-me__container-info">
-                        <caption class="know-me__title-data">Datos personales</caption>
-                            <tr>
-                                <th class="know-me__item"><strong >Ubicación</strong></th>
-                                <td class="know-me__field">Bogotá-Colombia</td>
-                            </tr>
-                            <tr>
-                                <th class="know-me__item"><strong >Celular</strong></th>
-                                <td class="know-me__field">+57 301 503 5597</td>
-                            </tr>
-                            <tr>
-                                <th class="know-me__item"><strong >Email</strong></th>
-                                <td class="know-me__field">antmarame@gmail.com</td>
-                            </tr>
-                            <tr>
-                                <th class="know-me__item"><strong >Aspiración</strong></th>
-                                <td class="know-me__field"><span class="know-me__objetive">Senior Backend Developer</span></td>
-                            </tr>
-                    </table>
-                    <div class="know-me__interest">
-                        <h2 class="know-me__title-interest">Intereses</h2>
-                        <div class="know-me_container-interest">
-                            <div class="hobbies">
-                                <i class="fa-solid fa-people-roof know-me__hobbie-icon"></i>
-                                <span class="know-me__hobbie-name">FAMILIA</span>
-                            </div>
-                            <div class="hobbies">
-                                <i class="fa-solid fa-laptop-code know-me__hobbie-icon"></i>
-                                <span class="know-me__hobbie-name">DEVELOP</span>
-                            </div>
-                            <div class="hobbies">
-                                <i class="fa-solid fa-headphones know-me__hobbie-icon"></i>
-                                <span class="know-me__hobbie-name">MUSICA</span>
-                            </div>
-                            <div class="hobbies">
-                                <i class="fa-solid fa-person-walking-luggage know-me__hobbie-icon"></i>
-                                <span class="know-me__hobbie-name">VIAJES</span>
-                            </div>
-                            <div class="hobbies">
-                                <i class="fa-solid fa-film know-me__hobbie-icon"></i>
-                                <span class="know-me__hobbie-name">PELICULAS</span>
-                            </div>
-                            <div class="hobbies">
-                                <i class="fa-solid fa-bowl-food know-me__hobbie-icon"></i>
-                                <span class="know-me__hobbie-name">COMIDA</span>
-                            </div>
-                            
-                        </div>
-                    </div>
-                </div>
-                <button class="know-me__download-button">
-                    <a class="know-me__link" href="/document/Hv_Anthony_Enrique_Martinez_Amell.pdf" download="">Descargar</a>  CV <i class="fa-solid fa-download"></i>
-                    <span class="overlay"></span>
-                </button>
-            </div>
-        </section>
-        <section class="curriculum" id="cv">
-            <div class="curriculum__container">
-                <h2 class="know-me__title"> Curriculum</h2>
-                <div class="curriculum__container_content">
-                    <div class="curriculum__content curriculum__content_left">
-                        <h3 class="curriculum__title">Educacion</h3>
-                        <div class="curriculum__content_left2 curriculum__content_item">
-                            <h4 class="curriculum__content_title">Institución Universitaria ITSA</h4>
-                            <span class="curriculum__content_text">Ingenieria Mecatronica</span>
-                            <span class="curriculum__content_date">2012-2014</span> 
-                            <span class="curriculum__content_text">Tecnólogo Electrónico</span>
-                            <span class="curriculum__content_date">2010-2012</span>
-                            <span class="curriculum__content_text">Tecnico Electrónico</span>
-                            <span class="curriculum__content_date">2008-2011</span>
-                            <div class="curriculum__content_connector1">
-                                <div class="curriculum__content-circle circle_right"></div>
-                            </div>
-                        </div>
-                </div>
-                <div class="curriculum__content curriculum__content_rigth">
-                    <h3 class="curriculum__title">Experiencia</h3>
-                    <div class="curriculum__content_rigth2 curriculum__content_item">
-                        <h4 class="curriculum__content_title">Operador de Centro de Operaciones de Red</h4>
-                        <span class="curriculum__content_text">Caribe Mar de la Costa S.A.S. E.S.P</span>
-                        <span class="curriculum__content_date">2020-Actualidad</span>
-                        <div class="curriculum__content_connector2">
-                            <div class="curriculum__content-circle circle_left"></div>
-                        </div>
-                    </div>
-                    <div class="curriculum__content_rigth2 curriculum__content_item">
-                        <h4 class="curriculum__content_title">Técnico Operador Centro de Operaciones de Red</h4>
-                        <span class="curriculum__content_text">Electricaribe</span>
-                        <span class="curriculum__content_date">2014-2020</span>
-                        <div class="curriculum__content_connector2">
-                            <div class="curriculum__content-circle circle_left"></div>
-                        </div>
-                    </div>
-                    <div class="curriculum__content_rigth2 curriculum__content_item">
-                        <h4 class="curriculum__content_title">Técnico instalador sistemas de seguridad electrónica</h4>
-                        <span class="curriculum__content_text">Inversiones INDYCAR Ltda.</span>
-                        <span class="curriculum__content_date">2012-2013</span>
-                        <div class="curriculum__content_connector2">
-                            <div class="curriculum__content-circle circle_left"></div>
-                        </div>
-                    </div>                    
-            </div>
-            </div>
-        </section>   
-        <section class="contact" id="contacto">
-            <div class="container_contact">
-                <h2 class="know-me__title">Contacto</h2>
-                <div class="row">
-                    <form class="form" id="form" action="#" method="POST">
-                        <h3 class="form__title" >Deje aqui su informacion y le contactare</h3>
-                        <label class="form__label" for="inputnombre">Nombre</label>
-                        <input  class="form__input" type="text" name="nombre" id="inputnombre" placeholder="Ingrese su nombre">
-                        <label class="form__label" for="inputcorreo">Correo</label>
-                        <input  class="form__input" type="text" name="correo" id="inputcorreo" placeholder="Ingrese su Email">
-                        <label class="form__label" for="inputasunto">Asunto</label>
-                        <input  class="form__input" type="text" name="asunto" id="inputasunto" placeholder="Escriba aqui el asunto">
-                        <label class="form__label" for="inputmensaje">Mensaje</label>
-                        <textarea  class="form__input" name="mensaje" id="inputmensaje" cols="30" rows="5" placeholder="Deje un mensaje y yo lo contactare"></textarea>
-                        <button class="form__button"  type="submit">
-                            Enviar 
-                            <i class="fa-solid fa-paper-plane"></i>
-                            <span class="overlay"></span>
-                        </button>
-                    </form>
-                </div>
-            </div>            
-        </section>
-    </main>
-    <footer class="footer">
-        <a href="#inicio" class="footer__link-top">
-            <i class="fa-solid fa-angles-up"></i>
-        </a>
-        <div class="footer__container">
-            
-            <a class="footer__social_networks" href="https://github.com/devanthony92"><i class="fa-brands fa-github"></i><span class="overlay__links"></span></a>
-            <a class="footer__social_networks" href="https://linkedin.com/in/anthony-martinez-amell"><i class="fa-brands fa-linkedin"></i><span class="overlay__links"></span></a>
-        </div>
-    </footer>
+				<a
+					target="_blank"
+					class="footer__social_networks"
+					href="https://linkedin.com/in/anthony-martinez-amell"
+					><i class="fa-brands fa-linkedin"></i>
+					<span class="overlay__links"></span>
+				</a>
+			</div>
+		</footer>
+		<!-- Modal con detalles del proyecto 1 -->
+		<div class="project-modal" id="project1">
+			<div class="project-modal__content">
+				<button
+					data-modal-close="close-details"
+					class="project-modal__close"
+					id="close-details"
+					aria-label="Cerrar"
+				>
+					<i class="fa-solid fa-xmark"></i>
+				</button>
+				<div class="project-modal__body">
+					<h3 class="project-modal__title">
+						Sistema de Envío de Correos Automatizado
+					</h3>
+					<div class="project-modal__section">
+						<h4>🎯 Objetivo y problema resuelto</h4>
+						<p>
+							El objetivo principal del proyecto fue crear una solución integral
+							de administración que permitiera a las empresas o equipos técnicos
+							gestionar sus productos, usuarios y roles de forma eficiente y
+							centralizada. Antes, la gestión de permisos y usuarios se
+							realizaba de forma manual y poco estructurada, lo que generaba
+							errores de acceso, duplicidad de datos y falta de trazabilidad.
+							Con esta plataforma, se resolvió ese problema implementando un
+							sistema automatizado de control de acceso, donde cada usuario
+							tiene permisos asignados según su rol, reduciendo riesgos y
+							mejorando la productividad operativa.
+						</p>
+					</div>
+					<div class="project-modal__section">
+						<h4>⚙️ Tecnologías y herramientas</h4>
+						<ul>
+							<li>Laravel 10 (PHP)</li>
+							<li>Laravel Breeze</li>
+							<li>Blade Templates + TailwindCSS</li>
+							<li>MySQL</li>
+							<li>Composer y NPM</li>
+							<li>Git / GitHub</li>
+						</ul>
+					</div>
+					<div class="project-modal__section">
+						<h4>📈 Resultados medibles</h4>
+						<ul>
+							<li>
+								Implementación exitosa de un
+								<strong>sistema de roles y permisos totalmente dinámico</strong
+								>, que permite escalar el control de acceso sin modificar
+								código.
+							</li>
+							<li>
+								Reducción del tiempo de gestión de usuarios y permisos en más
+								del 60% comparado con un flujo manual.
+							</li>
+							<li>
+								Interfaz intuitiva y responsiva, optimizada para escritorio y
+								dispositivos móviles.
+							</li>
+							<li>
+								Arquitectura modular que facilita la extensión del sistema con
+								nuevos módulos (por ejemplo, reportes, facturación o inventario
+								avanzado).
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Modal con detalles del proyecto 2 -->
+		<div class="project-modal" id="project2">
+			<div class="project-modal__content">
+				<button
+					data-modal-close="close-details"
+					class="project-modal__close"
+					id="close-details"
+					aria-label="Cerrar"
+				>
+					<i class="fa-solid fa-xmark"></i>
+				</button>
+				<div class="project-modal__body">
+					<h3 class="project-modal__title">
+						Sistema de Envío de Correos Automatizado
+					</h3>
+					<div class="project-modal__section">
+						<h4>🎯 Objetivo y problema resuelto</h4>
+						<p>
+							Automatizar el envío de correos electrónicos transaccionales y
+							personalizados, resolviendo la necesidad de gestionar fácilmente
+							plantillas y mensajes desde un backend centralizado.
+						</p>
+					</div>
+					<div class="project-modal__section">
+						<h4>⚙️ Tecnologías y herramientas</h4>
+						<ul>
+							<li>FastAPI (Python)</li>
+							<li>SendGrid API</li>
+							<li>PostgreSQL + SQLAlchemy</li>
+							<li>Jinja2, OAuth2/JWT, Swagger UI</li>
+						</ul>
+					</div>
+					<div class="project-modal__section">
+						<h4>📈 Resultados medibles</h4>
+						<ul>
+							<li>
+								Reducción del tiempo de envío masivo en un
+								<strong>70 %</strong>.
+							</li>
+							<li>CRUD completo para plantillas HTML reutilizables.</li>
+							<li>
+								Tasa de entrega del <strong>95 %</strong> y latencia promedio
+								menor a 1 s.
+							</li>
+							<li>
+								Arquitectura escalable lista para integración con
+								microservicios.
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Video modal 1-->
+		<div class="project-modal" id="demoProject1">
+			<div class="video-modal__content">
+				<button
+					data-modal-close="close-video-modal"
+					class="video-modal__close"
+					id="close-video"
+					aria-label="Cerrar video"
+				>
+					<i class="fa-solid fa-xmark"></i>
+				</button>
+				<div class="video-modal__player">
+					<iframe
+						id="video-iframe"
+						src="https://www.youtube.com/embed/gWX5_k63aaU?autoplay=1"
+						title="Video del proyecto 1"
+						frameborder="0"
+						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+						allowfullscreen
+					>
+					</iframe>
+				</div>
+			</div>
+		</div>
+		<!-- Video modal 2-->
+		<div class="project-modal" id="demoProject2">
+			<div class="video-modal__content">
+				<button
+					data-modal-close="close-video-modal"
+					class="video-modal__close"
+					id="close-video"
+					aria-label="Cerrar video"
+				>
+					<i class="fa-solid fa-xmark"></i>
+				</button>
+				<div class="video-modal__player">
+					<iframe
+						id="video-iframe"
+						src="https://www.youtube.com/embed/rN245AUXSYc?autoplay=1"
+						title="Video del proyecto 2"
+						frameborder="0"
+						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+						allowfullscreen
+					>
+					</iframe>
+				</div>
+			</div>
+		</div>
+		<!-- Experiencia modal 1-->
+		<div class="experience-modal" id="experience1">
+			<div class="experience-modal__content">
+				<button
+					data-modal-close="close-details"
+					class="experience-modal__close"
+					id="close-details"
+					aria-label="Cerrar"
+				>
+					<i class="fa-solid fa-xmark"></i>
+				</button>
+				<div class="experience-modal__body">
+					<h3 class="experience-modal__title">Proyecto Freelance</h3>
+					<div class="experience-modal__section">
+						<h4>💼 Desarrollador Backend Junior</h4>
+						<p>
+							Diseñé e implementé soluciones backend personalizadas para un
+							cliente independiente, optimizando procesos internos y mejorando
+							la eficiencia operativa de su negocio.
+						</p>
+						<p>📅 Septiembre 2025 - Actualidad | Remoto</p>
+					</div>
+					<div class="experience-modal__section">
+						<h4>📈 Logros</h4>
+						<ul>
+							<li>
+								Desarrollé <strong>aplicaciones CRUD con FastAPI</strong>,
+								logrando reducir los tiempos de respuesta en un
+								<strong>30%</strong> y facilitando la gestión de datos del
+								cliente.
+							</li>
+							<li>
+								Integré <strong>APIs RESTful con PostgreSQL</strong>,
+								garantizando una comunicación eficiente entre servicios y
+								mejorando la escalabilidad del sistema.
+							</li>
+							<li>
+								Implementé
+								<strong>validaciones avanzadas con Pydantic v2</strong>,
+								asegurando integridad de datos, tipado estricto y un manejo
+								robusto de errores.
+							</li>
+							<li>
+								Configuré
+								<strong>relaciones entre tablas complejas</strong> (uno a muchos
+								y muchos a muchos), optimizando consultas y reduciendo la
+								duplicidad de información.
+							</li>
+							<li>
+								Desarrollé un <strong>microservicio SMTP</strong> para el envío
+								automatizado de notificaciones y alertas al usuario final.
+							</li>
+							<li>
+								Gestioné de forma autónoma el ciclo completo de desarrollo
+								(análisis, diseño, desarrollo y despliegue), cumpliendo los
+								hitos del proyecto con un
+								<strong
+									>100% de puntualidad y alta satisfacción del cliente</strong
+								>.
+							</li>
+						</ul>
+					</div>
+					<div class="experience-modal__section">
+						<h4>⚙️ Tecnologías y herramientas</h4>
+						<ul>
+							<li>Laravel 10 (PHP)</li>
+							<li>Laravel Breeze</li>
+							<li>Blade Templates + TailwindCSS</li>
+							<li>MySQL</li>
+							<li>Composer y NPM</li>
+							<li>Git / GitHub</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
 		<script type="module" src="./js/index.js"></script>
+		<script type="module" src="./js/modal.js"></script>
 	</body>
 </html>

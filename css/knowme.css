@@ -1,8 +1,8 @@
 .know-me {
+	scroll-margin-top: 70px;
 	animation: fadeIn 1s ease forwards;
 	color: var(--blanco);
-	padding: 50px 20px;
-	position: relative;
+	margin: 30px auto;
 	z-index: 1;
 	pointer-events: none;
 }
@@ -10,7 +10,7 @@
 	font-size: var(--sm);
 	max-width: 1100px;
 	justify-items: center;
-	margin: auto;
+	margin: 30px auto;
 }
 .know-me__title {
 	font-size: var(--xg);
@@ -134,7 +134,7 @@
 	cursor: pointer;
 	overflow: hidden;
 	transition: transform 0.5s ease, color 0.5s ease;
-	z-index: 10;
+	z-index: 1;
 	pointer-events: all;
 }
 .know-me__download-button:hover {

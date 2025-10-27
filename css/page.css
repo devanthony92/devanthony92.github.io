@@ -8,6 +8,8 @@
 	--gris: rgba(37, 42, 46, 0.7);
 	--verde: rgba(0, 255, 204, 0.8);
 	--blanco: rgb(255, 255, 255);
+	--xxs: 1rem;
+	--xs: 1.25rem;
 	--sm: 1.6rem;
 	--md: 1.8rem;
 	--lg: 2rem;

@@ -1,8 +1,10 @@
 .contact {
+	scroll-margin-top: 70px;
 	animation: fadeIn 1s ease forwards;
 	display: flex;
 	flex-direction: column;
-	margin-top: 50px;
+	margin: 30px auto;
+	scroll-margin-top: 70px;
 	height: 100%;
 	color: var(--blanco);
 	align-items: center;
@@ -119,19 +121,6 @@ form button:hover i {
 	transform: translateX(4px);
 }
 
-/* Animación de entrada */
-/* @keyframes fadeIn {
-	from {
-		opacity: 0;
-		transform: translateY(30px);
-	}
-	to {
-		opacity: 1;
-		transform: translateY(0);
-	}
-} */
-
-/* Responsividad */
 @media (max-width: 480px) {
 	form {
 		padding: 1.5rem;
@@ -143,5 +132,63 @@ form button:hover i {
 
 	.form__button {
 		font-size: 0.95rem;
+	}
+}
+
+/*---------------------------------------------------------------------------*/
+.coming-soon {
+	width: 100%;
+	max-width: 600px;
+	margin: 3rem auto;
+	text-align: center;
+	padding: 2rem;
+	background: rgba(255, 255, 255, 0.05);
+	border: 1px solid rgba(255, 255, 255, 0.1);
+	border-radius: 16px;
+	backdrop-filter: blur(10px);
+	box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+	animation: fadeIn 1s ease forwards;
+}
+
+.coming-soon__title {
+	font-size: var(--lg);
+	font-weight: 700;
+	color: var(--verde);
+	margin-bottom: 1rem;
+}
+
+.coming-soon__text {
+	color: var(--blanco);
+	font-size: var(--md);
+	line-height: 1.6;
+	margin-bottom: 1.5rem;
+}
+
+.highlight {
+	color: var(--verde);
+	font-weight: 600;
+}
+
+.loader {
+	width: 40px;
+	height: 40px;
+	border: 3px solid rgba(127, 255, 212, 0.3);
+	border-top: 3px solid var(--verde);
+	border-radius: 50%;
+	margin: 1rem auto;
+	animation: spin 1s linear infinite;
+}
+
+.coming-soon__note {
+	font-size: var(--sm);
+	color: rgba(255, 255, 255, 0.6);
+	margin-top: 0.5rem;
+	letter-spacing: 1px;
+}
+
+/* Animaciones */
+@keyframes spin {
+	to {
+		transform: rotate(360deg);
 	}
 }
