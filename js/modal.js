@@ -32,20 +32,21 @@ class ModalManager {
 	}
 
 	openModal(event) {
-		console.log(event);
 		const modalId = event.currentTarget.dataset.modalOpen;
-		const modal = document.getElementById(modalId);
-
-		if (!modal) return console.warn(`Modal con ID "${modalId}" no encontrado`);
+		this.modal = document.getElementById(modalId);
+		this.modalClass = `${this.modal.classList.value}--active`;
+		console.log(this.modalClass);
+		if (!this.modal)
+			return console.warn(`Modal con ID "${modalId}" no encontrado`);
 
 		// Cierra cualquier modal activo antes de abrir uno nuevo
 		if (this.activeModal) this.closeModal();
 
-		modal.classList.add("project-modal--active");
-		this.activeModal = modal;
+		this.modal.classList.add(this.modalClass);
+		this.activeModal = this.modal;
 
 		// Si contiene un iframe, reproducir video desde el inicio
-		const iframe = modal.querySelector("iframe");
+		const iframe = this.modal.querySelector("iframe");
 		if (iframe) {
 			const src = iframe.dataset.src || iframe.src;
 			if (!iframe.dataset.src) iframe.dataset.src = src; // guardar src original
@@ -55,14 +56,14 @@ class ModalManager {
 
 	closeModal() {
 		if (!this.activeModal) return;
-
+		console.log(this.modalClass);
 		// Si el modal tiene video, detenerlo
 		const iframe = this.activeModal.querySelector("iframe");
 		if (iframe) {
 			iframe.src = ""; // limpia para detener reproducción
 		}
 
-		this.activeModal.classList.remove("project-modal--active");
+		this.activeModal.classList.remove(this.modalClass);
 		this.activeModal = null;
 	}
 }

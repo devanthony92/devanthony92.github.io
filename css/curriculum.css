@@ -37,6 +37,10 @@
 	border-left: 2px solid var(--verde);
 	margin-left: 20px;
 }
+.curriculum__content-details {
+	cursor: pointer;
+	pointer-events: all;
+}
 .curriculum__content_item {
 	padding: 25px;
 	margin-bottom: 30px;
