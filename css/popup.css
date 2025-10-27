@@ -125,7 +125,7 @@
 
 .project-modal__title {
 	color: var(--verde);
-	font-size: 1.8rem;
+	font-size: var(--lg);
 	margin-bottom: 1.5rem;
 	text-align: center;
 }
@@ -137,7 +137,7 @@
 
 .project-modal__section h4 {
 	color: var(--verde);
-	font-size: 1.2rem;
+	font-size: var(--md);
 	margin-bottom: 0.8rem;
 }
 
@@ -145,7 +145,7 @@
 .project-modal__section ul {
 	color: rgba(255, 255, 255, 0.85);
 	line-height: 1.6;
-	font-size: 0.95rem;
+	font-size: var(--xs);
 }
 
 .project-modal__section ul {
