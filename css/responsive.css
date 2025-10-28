@@ -1,0 +1,164 @@
+/* --- Botón hamburguesa --- */
+.home {
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 4rem 2rem;
+	background: linear-gradient(135deg, #0a0a0a, #1a1a1a);
+	color: white;
+}
+
+.home__container {
+	max-width: 1200px;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 4rem;
+}
+
+/* --- Perfil --- */
+.home__intro {
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 1rem;
+}
+
+.home__profile {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 1rem;
+}
+
+.home__img {
+	width: 180px;
+	height: 180px;
+	border-radius: 50%;
+	border: 3px solid var(--verde, #7fffd4);
+	object-fit: cover;
+	transition: transform 0.4s ease;
+}
+
+.home__img:hover {
+	transform: scale(1.05);
+}
+
+.home__title {
+	font-size: 2rem;
+	font-weight: 700;
+	color: var(--verde, #7fffd4);
+}
+
+.home__subtitle {
+	font-size: 1.2rem;
+	color: #ccc;
+}
+
+.home__social {
+	display: flex;
+	gap: 1.5rem;
+	margin-top: 1rem;
+}
+
+.social__link {
+	color: var(--verde, #7fffd4);
+	font-size: 1.5rem;
+	transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social__link:hover {
+	transform: scale(1.2);
+	color: white;
+}
+
+/* --- Proyectos --- */
+.section__title {
+	font-size: 1.8rem;
+	font-weight: 700;
+	margin-bottom: 0.5rem;
+	text-align: center;
+}
+
+.section__subtitle {
+	text-align: center;
+	max-width: 700px;
+	margin: 0 auto 2rem auto;
+	color: #aaa;
+}
+
+.projects__grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+	gap: 2rem;
+}
+
+.project-card {
+	background: rgba(255, 255, 255, 0.05);
+	border-radius: 1rem;
+	overflow: hidden;
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+	transform: translateY(-5px);
+	box-shadow: 0 0 25px rgba(127, 255, 212, 0.2);
+}
+
+.project-card__img img {
+	width: 100%;
+	height: 200px;
+	object-fit: cover;
+}
+
+.project-card__content {
+	padding: 1.5rem;
+}
+
+.project-card__title {
+	color: var(--verde, #7fffd4);
+	font-size: 1.3rem;
+	margin-bottom: 0.5rem;
+}
+
+.project-card__description {
+	font-size: 0.95rem;
+	color: #ccc;
+	margin-bottom: 1rem;
+}
+
+.project-card__tags {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.5rem;
+	margin-bottom: 1rem;
+}
+
+.project-card__tags span {
+	background: rgba(127, 255, 212, 0.1);
+	color: var(--verde, #7fffd4);
+	padding: 0.4rem 0.8rem;
+	border-radius: 20px;
+	font-size: 0.8rem;
+}
+
+/* --- Botones --- */
+.btn-outline {
+	background: transparent;
+	border: 1px solid var(--verde, #7fffd4);
+	color: var(--verde, #7fffd4);
+	padding: 0.6rem 1.2rem;
+	border-radius: 20px;
+	cursor: pointer;
+	font-weight: 500;
+	transition: background 0.3s ease, color 0.3s ease;
+}
+
+.btn-outline:hover {
+	background: var(--verde, #7fffd4);
+	color: #000;
+}

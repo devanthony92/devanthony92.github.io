@@ -32,19 +32,24 @@
 	<body>
 		<header class="header">
 			<div class="header__container">
-				<div class="header__container_logo">
-					<a class="header__name" href="#">Anthony</a>
+				<div class="header__logo">
+					<a href="#" class="header__name">Anthony</a>
 				</div>
-				<nav id="nav">
+
+				<nav id="nav" class="header__nav">
 					<ul class="header__list">
-						<li><a class="header__list_item" href="#inicio">INICIO</a></li>
-						<li><a class="header__list_item" href="#conoceme">CONÓCEME</a></li>
-						<li><a class="header__list_item" href="#cv">CURRICULUM</a></li>
-						<li><a class="header__list_item" href="#contacto">CONTACTO</a></li>
+						<li><a href="#inicio" class="header__item">Inicio</a></li>
+						<li><a href="#conoceme" class="header__item">Conóceme</a></li>
+						<li><a href="#cv" class="header__item">Currículum</a></li>
+						<li><a href="#contacto" class="header__item">Contacto</a></li>
 					</ul>
 				</nav>
-				<div class="header__nav" onclick="menu()">
-					<i class="fa-solid fa-bars header__nav_menu"></i>
+
+				<!-- Botón hamburguesa -->
+				<div class="header__toggle" id="nav-toggle">
+					<span></span>
+					<span></span>
+					<span></span>
 				</div>
 			</div>
 		</header>

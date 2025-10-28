@@ -1,18 +1,21 @@
 .header {
+	background: var(--negro);
+	backdrop-filter: blur(10px);
+	z-index: 1000;
 	background-color: var(--gris);
 	position: fixed;
 	width: 100%;
 	top: 0;
 	left: 0;
-	z-index: 10;
 	padding: 5px;
 	justify-content: center;
 	text-align: center;
-	color: white;
+	color: var(--blanco);
 	text-shadow: 0 0 10px var(--verde);
 	font-weight: bold;
 	animation: fadeIn 1s ease forwards;
 	pointer-events: all;
+	cursor: auto;
 }
 
 .header__container {
@@ -23,6 +26,7 @@
 	align-items: center;
 	padding: 15px 20px;
 }
+
 .header__name {
 	font-size: var(--xg);
 	font-weight: 700;
@@ -30,27 +34,90 @@
 	text-decoration: none;
 }
 .header__list {
-	font-size: var(--sm);
 	display: flex;
+	gap: var(--md);
 	list-style: none;
 }
-.header__list_item {
-	text-align: none;
+.header__item {
+	font-weight: 500;
+	transition: color 0.3s ease, transform 0.3s ease;
+	font-size: var(--md);
 	color: var(--blanco);
 	margin: 0px 15px;
 	padding: 3px;
-	transition: 0.5s;
 	text-decoration: none;
 }
-.header__list_item:hover {
-	color: var(--verde);
+.header__item:hover {
+	color: var(--verde, #7fffd4);
+	transform: scale(1.05);
 }
-.header__nav_menu {
-	font-size: var(--md);
-	background-color: var(--verde);
-	color: var(--blanco);
-	padding: 5px;
-	border-radius: 5px;
-	cursor: pointer;
+.header__nav {
+	display: flex;
+	align-items: center;
+}
+
+.header__toggle {
 	display: none;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 25px;
+	height: 18px;
+	cursor: pointer;
+	z-index: 1100;
+}
+
+.header__toggle span {
+	display: block;
+	height: 3px;
+	width: 100%;
+	background: var(--verde, #7fffd4);
+	border-radius: 3px;
+	transition: all 0.3s ease;
+}
+
+/* --- Modo móvil --- */
+@media (max-width: 480px) {
+	.header__toggle {
+		display: flex;
+	}
+
+	.header__nav {
+		position: fixed;
+		top: 0;
+		left: -100%;
+		width: 100%;
+		height: 30vh;
+		background: rgba(0, 0, 0, 0.95);
+		backdrop-filter: blur(12px);
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		transition: left 0.4s ease;
+	}
+
+	.header__nav.active {
+		left: 0;
+	}
+
+	.header__list {
+		flex-direction: column;
+		gap: 2rem;
+		text-align: center;
+	}
+
+	.header__item {
+		font-size: 1.4rem;
+		letter-spacing: 1px;
+	}
+
+	/* --- Animación hamburguesa a “X” --- */
+	.header__toggle.active span:nth-child(1) {
+		transform: translateY(7.5px) rotate(45deg);
+	}
+	.header__toggle.active span:nth-child(2) {
+		opacity: 0;
+	}
+	.header__toggle.active span:nth-child(3) {
+		transform: translateY(-7.5px) rotate(-45deg);
+	}
 }

@@ -10,3 +10,11 @@ const system = new ParticleSystem({
 });
 
 system.start();
+
+const toggle = document.getElementById("nav-toggle");
+const nav = document.getElementById("nav");
+
+toggle.addEventListener("click", () => {
+	toggle.classList.toggle("active");
+	nav.classList.toggle("active");
+});
