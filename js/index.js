@@ -18,3 +18,12 @@ toggle.addEventListener("click", () => {
 	toggle.classList.toggle("active");
 	nav.classList.toggle("active");
 });
+
+document.getElementById("downloadCvBtn").addEventListener("click", (e) => {
+	e.preventDefault();
+	const fileUrl = e.target.href;
+	const link = document.createElement("a");
+	link.href = fileUrl;
+	link.download = "Hv_Anthony_Enrique_Martinez_Amell.pdf";
+	link.click();
+});
