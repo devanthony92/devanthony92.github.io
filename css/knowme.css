@@ -180,4 +180,5 @@
 .know-me__link {
 	color: var(--blanco);
 	text-decoration: none;
+	pointer-events: all;
 }
