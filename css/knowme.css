@@ -8,7 +8,6 @@
 }
 .know-me__container {
 	font-size: var(--sm);
-	max-width: 1100px;
 	justify-items: center;
 	margin: 30px auto;
 }
@@ -120,11 +119,13 @@
 }
 
 .know-me__download-button {
+	box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+	border-radius: 10px;
 	position: relative;
 	display: block;
 	margin: 20px auto;
 	padding: 12px 28px;
-	border: 2px solid var(--blanco);
+	border: 2px solid var(--verde);
 	color: var(--blanco);
 	background: transparent;
 	font-size: var(--md);

@@ -15,7 +15,7 @@
 
 .projects__subtitle {
 	font-size: var(--md);
-	max-width: 600px;
+
 	margin: 0 auto 3rem;
 	color: rgba(255, 255, 255, 0.7);
 }

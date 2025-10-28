@@ -1,14 +1,27 @@
 import { ParticleSystem } from "./ParticleSystem.js";
 
-const system = new ParticleSystem({
-	fps: 60,
-	baseColor: 180,
-	particleSize: [0.5, 2.5],
-	particlesPerPoint: 4,
-	trailLength: 20,
-	maxParticles: 1200, // límite máximo de partículas
-});
+const isMobile = /Mobi|Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
 
+if (!isMobile) {
+	// Solo iniciar en dispositivos de escritorio
+	const system = new ParticleSystem({
+		fps: 60,
+		baseColor: 180,
+		maxParticles: 1200,
+		gradientFrameInterval: 8,
+	});
+	system.start();
+} else {
+	console.log(
+		"📱 Efecto de partículas deshabilitado en móviles para mejor rendimiento"
+	);
+}
+
+const system = new ParticleSystem({
+	maxParticles: 1200,
+	fps: 60,
+	gradientFrameInterval: 10,
+});
 system.start();
 
 const toggle = document.getElementById("nav-toggle");

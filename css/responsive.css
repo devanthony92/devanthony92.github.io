@@ -291,6 +291,8 @@
 	}
 
 	.know-me__download-button {
+		justify-content: center;
+		text-align: center;
 		width: 100%;
 		padding: 0.8rem;
 		font-size: 1rem;
