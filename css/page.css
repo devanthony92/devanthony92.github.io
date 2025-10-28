@@ -16,14 +16,18 @@
 	--xg: 3rem;
 }
 
-html {
+html,
+body {
+	width: 100vw;
+	margin: 0;
+	padding: 0;
+	overflow-x: hidden;
 	font-family: "Quicksand", sans-serif;
 	font-size: 62.5%;
 	scroll-behavior: smooth;
 	pointer-events: none;
 	cursor: none;
 }
-
 /* Todo tu contenido debe ir por encima */
 
 @keyframes fadeIn {

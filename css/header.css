@@ -31,7 +31,12 @@
 	font-size: var(--xg);
 	font-weight: 700;
 	color: var(--verde);
+	text-shadow: 0 0 10px var(--verde);
 	text-decoration: none;
+	transition: transform 0.3s ease;
+}
+.header__name:hover {
+	transform: scale(1.05);
 }
 .header__list {
 	display: flex;
@@ -49,7 +54,7 @@
 }
 .header__item:hover {
 	color: var(--verde, #7fffd4);
-	transform: scale(1.05);
+	transform: scale(1.1);
 }
 .header__nav {
 	display: flex;
