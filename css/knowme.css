@@ -5,6 +5,7 @@
 	margin: 30px auto;
 	z-index: 1;
 	pointer-events: none;
+	padding: 0 30px;
 }
 .know-me__container {
 	font-size: var(--sm);

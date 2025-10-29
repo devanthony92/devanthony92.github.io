@@ -56,7 +56,7 @@
 	}
 }
 /* --- HOME RESPONSIVE (480px) --- */
-@media (max-width: 480px) {
+@media (max-width: 768px) {
 	.home {
 		padding: 40px 0 0 0;
 		margin: 40px 0;
@@ -169,11 +169,11 @@
 	}
 }
 /* === MODAL RESPONSIVE (480px) === */
-@media (max-width: 480px) {
+@media (max-width: 768px) {
 	.project-modal__content {
 		width: 80vw;
-		max-height: 80vh;
-		padding: 15px;
+		max-height: 60vh;
+		padding: 20px;
 		margin: 20px auto;
 		top: 20px;
 		border-radius: 16px;
@@ -188,6 +188,7 @@
 
 	.project-modal__section h4 {
 		font-size: 1rem;
+		padding: 5px 0;
 	}
 
 	.project-modal__section p,
@@ -202,11 +203,11 @@
 		right: 10px;
 	}
 }
-@media (max-width: 480px) {
+@media (max-width: 768px) {
 	.experience-modal__content {
 		width: 80vw;
-		max-height: 80vh;
-		padding: 15px;
+		max-height: 60vh;
+		padding: 20px;
 		margin: 20px auto;
 		top: 20px;
 		border-radius: 16px;
@@ -220,6 +221,7 @@
 
 	.experience-modal__section h4 {
 		font-size: 1rem;
+		padding: 5px 0;
 	}
 
 	.experience-modal__section p,
@@ -234,10 +236,10 @@
 		right: 10px;
 	}
 }
-/* === ABOUT RESPONSIVE (480px) === */
-@media (max-width: 480px) {
+/* === ABOUT RESPONSIVE (768px) === */
+@media (max-width: 768px) {
 	.know-me {
-		padding: 0 10px;
+		padding: 0 20px;
 	}
 
 	.know-me__title {

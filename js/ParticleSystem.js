@@ -100,18 +100,19 @@ export class ParticleSystem {
 		}
 	}
 
-	_increaseQuality() {
-		// Solo aumentar si el rendimiento es estable
-		if (this.config.particlesPerPoint < 4) {
-			this.config.particlesPerPoint += 1;
-		} else if (this.config.maxParticles < 1200) {
-			this.config.maxParticles = Math.min(1200, this.config.maxParticles + 100);
+	_decreaseQuality() {
+		// Reduce carga, pero de manera progresiva
+		if (this.config.particlesPerPoint > 1) {
+			this.config.particlesPerPoint -= 1;
+		} else if (this.config.maxParticles > 300) {
+			this.config.maxParticles = Math.max(300, this.config.maxParticles - 100);
 		} else {
-			this.config.fps = Math.min(75, this.config.fps + 5);
+			// como último recurso, reducir FPS objetivo
+			this.config.fps = Math.max(30, this.config.fps - 5);
 			this.frameInterval = 1000 / this.config.fps;
 		}
 		console.log(
-			`🚀 Rendimiento estable — Aumentando calidad. FPS: ${this.performance.fps.toFixed(
+			`🔧 Rendimiento bajo — Ajustando calidad. FPS: ${this.performance.fps.toFixed(
 				1
 			)}`
 		);

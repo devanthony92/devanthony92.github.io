@@ -35,7 +35,6 @@ class ModalManager {
 		const modalId = event.currentTarget.dataset.modalOpen;
 		this.modal = document.getElementById(modalId);
 		this.modalClass = `${this.modal.classList.value}--active`;
-		console.log(this.modalClass);
 		if (!this.modal)
 			return console.warn(`Modal con ID "${modalId}" no encontrado`);
 
@@ -56,7 +55,6 @@ class ModalManager {
 
 	closeModal() {
 		if (!this.activeModal) return;
-		console.log(this.modalClass);
 		// Si el modal tiene video, detenerlo
 		const iframe = this.activeModal.querySelector("iframe");
 		if (iframe) {
