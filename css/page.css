@@ -25,7 +25,6 @@ body {
 	font-family: "Quicksand", sans-serif;
 	font-size: 62.5%;
 	scroll-behavior: smooth;
-	pointer-events: none;
 	cursor: none;
 }
 

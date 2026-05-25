@@ -1,4 +1,5 @@
 .home {
+	scroll-margin-top: 70px;
 	animation: fadeIn 1s ease forwards;
 	margin: 30px auto;
 	color: var(--blanco);

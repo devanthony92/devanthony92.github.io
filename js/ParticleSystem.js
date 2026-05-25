@@ -39,7 +39,7 @@ export class ParticleSystem {
 
 		this.particles = [];
 		this.pool = new ParticlePool(
-			Math.min(600, Math.floor(this.config.maxParticles / 2))
+			Math.min(600, Math.floor(this.config.maxParticles / 2)),
 		);
 
 		this.gradientCache = new GradientCache();
@@ -111,11 +111,6 @@ export class ParticleSystem {
 			this.config.fps = Math.max(30, this.config.fps - 5);
 			this.frameInterval = 1000 / this.config.fps;
 		}
-		console.log(
-			`🔧 Rendimiento bajo — Ajustando calidad. FPS: ${this.performance.fps.toFixed(
-				1
-			)}`
-		);
 	}
 
 	_increaseQuality() {
@@ -128,11 +123,6 @@ export class ParticleSystem {
 			this.config.fps = Math.min(75, this.config.fps + 5);
 			this.frameInterval = 1000 / this.config.fps;
 		}
-		console.log(
-			`🚀 Rendimiento estable — Aumentando calidad. FPS: ${this.performance.fps.toFixed(
-				1
-			)}`
-		);
 	}
 
 	_update() {
@@ -186,8 +176,8 @@ export class ParticleSystem {
 						current.y,
 						this.config.baseColor,
 						this.config.particleSize,
-						[24, 80]
-					)
+						[24, 80],
+					),
 				);
 			}
 			return;
@@ -203,8 +193,8 @@ export class ParticleSystem {
 						pt.y,
 						this.config.baseColor,
 						this.config.particleSize,
-						[24, 80]
-					)
+						[24, 80],
+					),
 				);
 			}
 		}
@@ -213,7 +203,7 @@ export class ParticleSystem {
 	_render() {
 		// RENDER BACKGROUND (cached gradient)
 		const bgCtx = this.canvasManager.getContext(
-			this.config.backgroundLayerName
+			this.config.backgroundLayerName,
 		);
 		const w = bgCtx.canvas.width;
 		const h = bgCtx.canvas.height;

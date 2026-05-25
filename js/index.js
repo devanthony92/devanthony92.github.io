@@ -2,22 +2,26 @@ import { ParticleSystem } from "./ParticleSystem.js";
 
 const isMobile = /Mobi|Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
 
-if (!isMobile) {
-	const system = new ParticleSystem({
-		fps: 60,
-		baseColor: 180,
-		maxParticles: 1500,
-		gradientFrameInterval: 3,
-	});
-	system.start();
-} else {
-	const system = new ParticleSystem({
-		fps: 40,
-		baseColor: 180,
-		maxParticles: 15,
-		gradientFrameInterval: 8,
-	});
-	system.start();
+try {
+	if (!isMobile) {
+		const system = new ParticleSystem({
+			fps: 60,
+			baseColor: 180,
+			maxParticles: 1500,
+			gradientFrameInterval: 3,
+		});
+		system.start();
+	} else {
+		const system = new ParticleSystem({
+			fps: 40,
+			baseColor: 180,
+			maxParticles: 15,
+			gradientFrameInterval: 8,
+		});
+		system.start();
+	}
+} catch (e) {
+	document.body.style.cursor = "auto";
 }
 
 const toggle = document.getElementById("nav-toggle");
