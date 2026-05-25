@@ -135,6 +135,13 @@ form button:hover i {
 	}
 }
 
+.h-captcha {
+	margin-top: 0.5rem;
+	filter: invert(0.85) hue-rotate(130deg);
+	border-radius: 8px;
+	overflow: hidden;
+}
+
 .form__feedback {
 	display: none;
 	padding: 12px 16px;
