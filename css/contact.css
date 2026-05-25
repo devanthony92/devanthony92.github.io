@@ -135,6 +135,37 @@ form button:hover i {
 	}
 }
 
+.form__feedback {
+	display: none;
+	padding: 12px 16px;
+	border-radius: 8px;
+	font-size: var(--sm);
+	text-align: center;
+	font-weight: 600;
+}
+
+.form__feedback.visible {
+	display: block;
+}
+
+.form__feedback--success {
+	background: rgba(0, 255, 204, 0.1);
+	border: 1px solid rgba(0, 255, 204, 0.4);
+	color: var(--verde);
+}
+
+.form__feedback--error {
+	background: rgba(255, 80, 80, 0.1);
+	border: 1px solid rgba(255, 80, 80, 0.4);
+	color: #ff6b6b;
+}
+
+.form__button:disabled {
+	opacity: 0.6;
+	cursor: not-allowed;
+	pointer-events: none;
+}
+
 /*---------------------------------------------------------------------------*/
 .coming-soon {
 	width: 100%;

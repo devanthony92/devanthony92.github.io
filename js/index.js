@@ -32,6 +32,54 @@ toggle.addEventListener("click", () => {
 	nav.classList.toggle("active");
 });
 
+const contactForm = document.getElementById("contact-form");
+if (contactForm) {
+	const btn = document.getElementById("form-submit-btn");
+	const feedback = document.getElementById("form-feedback");
+
+	contactForm.addEventListener("submit", async (e) => {
+		e.preventDefault();
+
+		// Sincronizar replyto con el email ingresado
+		document.getElementById("replyto-field").value =
+			document.getElementById("input-email").value;
+
+		btn.disabled = true;
+		btn.innerHTML =
+			'Enviando... <i class="fa-solid fa-spinner fa-spin"></i>';
+
+		feedback.className = "form__feedback";
+
+		try {
+			const response = await fetch("https://api.web3forms.com/submit", {
+				method: "POST",
+				body: new FormData(contactForm),
+			});
+			const data = await response.json();
+
+			feedback.classList.add("visible");
+			if (data.success) {
+				feedback.classList.add("form__feedback--success");
+				feedback.textContent =
+					"¡Mensaje enviado! Me pondré en contacto contigo pronto.";
+				contactForm.reset();
+			} else {
+				feedback.classList.add("form__feedback--error");
+				feedback.textContent =
+					"Hubo un error al enviar el mensaje. Intenta de nuevo.";
+			}
+		} catch {
+			feedback.classList.add("visible", "form__feedback--error");
+			feedback.textContent =
+				"Error de conexión. Intenta nuevamente.";
+		} finally {
+			btn.disabled = false;
+			btn.innerHTML =
+				'Enviar <i class="fa-solid fa-paper-plane"></i><span class="overlay"></span>';
+		}
+	});
+}
+
 document.getElementById("downloadCvBtn").addEventListener("click", (e) => {
 	e.preventDefault();
 	const fileUrl = e.target.href;
