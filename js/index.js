@@ -40,20 +40,31 @@ if (contactForm) {
 	contactForm.addEventListener("submit", async (e) => {
 		e.preventDefault();
 
+		feedback.className = "form__feedback";
+
+		// Verificar que el captcha fue resuelto antes de enviar
+		const formData = new FormData(contactForm);
+		const captchaToken = formData.get("h-captcha-response");
+		if (!captchaToken) {
+			feedback.classList.add("visible", "form__feedback--error");
+			feedback.textContent =
+				"Por favor completa el captcha antes de enviar.";
+			return;
+		}
+
 		// Sincronizar replyto con el email ingresado
 		document.getElementById("replyto-field").value =
 			document.getElementById("input-email").value;
+		formData.set("replyto", document.getElementById("input-email").value);
 
 		btn.disabled = true;
 		btn.innerHTML =
 			'Enviando... <i class="fa-solid fa-spinner fa-spin"></i>';
 
-		feedback.className = "form__feedback";
-
 		try {
 			const response = await fetch("https://api.web3forms.com/submit", {
 				method: "POST",
-				body: new FormData(contactForm),
+				body: formData,
 			});
 			const data = await response.json();
 
@@ -70,8 +81,7 @@ if (contactForm) {
 			}
 		} catch {
 			feedback.classList.add("visible", "form__feedback--error");
-			feedback.textContent =
-				"Error de conexión. Intenta nuevamente.";
+			feedback.textContent = "Error de conexión. Intenta nuevamente.";
 		} finally {
 			btn.disabled = false;
 			btn.innerHTML =
