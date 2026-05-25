@@ -40,6 +40,7 @@
 					<ul class="header__list">
 						<li><a href="#inicio" class="header__item">Inicio</a></li>
 						<li><a href="#conoceme" class="header__item">Conóceme</a></li>
+						<li><a href="#habilidades" class="header__item">Habilidades</a></li>
 						<li><a href="#cv" class="header__item">Currículum</a></li>
 						<li><a href="#contacto" class="header__item">Contacto</a></li>
 					</ul>
@@ -60,7 +61,7 @@
 						<img class="home__container_img" src="img/me.png" alt="" />
 						<div>
 							<h1 class="home__title">Anthony Martinez</h1>
-							<h2 class="home__subtitle">Junior Full Stack Developer</h2>
+							<h2 class="home__subtitle">Backend Developer</h2>
 						</div>
 					</div>
 					<div class="projects main__grid" id="proyectos">
@@ -160,14 +161,7 @@
 										>
 											Ver Repositorio
 										</button>
-										<button
-											class="btn-outline"
-											type="button"
-											onclick="window.open('https://notification-service-am7j.onrender.com/docs', '_blank')"
-										>
-											Ver en Render
-										</button>
-										<button data-modal-open="demoProject2" class="btn-outline">
+<button data-modal-open="demoProject2" class="btn-outline">
 											Ver Demo
 										</button>
 									</div>
@@ -229,7 +223,7 @@
 						<a
 							target="_blank"
 							class="footer__social_networks"
-							href="mailto:antmarame@gmail.com"
+							href="mailto:aenriquemartinez@gmail.com"
 							><i class="fa-solid fa-envelope"></i>
 							<span class="overlay__links"></span>
 						</a>
@@ -250,12 +244,12 @@
 						<span class="know-me__description-span"
 							>Hola, Soy Anthony Martinez</span
 						>
-						Desarrollador Web Junior con conocimientos en HTML, CSS, JavaScript,
-						PHP y Python. Apasionado por el desarrollo backend y la creación de
-						soluciones eficientes mediante principios de POO, con experiencia en
-						el trabajo en equipo enfocado en el cumplimiento de metas. Destaco
-						por mi capacidad de aprendizaje, adaptabilidad y enfoque en la
-						mejora continua.
+						Desarrollador Full Stack especializado en backend con FastAPI, Flask y Laravel.
+						Cuento con experiencia en arquitectura de APIs REST, microservicios,
+						optimización de bases de datos PostgreSQL y despliegue en cloud con OCI y
+						Kubernetes. Ingeniero Mecatrónico que migró al desarrollo de software
+						combinando rigor técnico, liderazgo y compromiso con la calidad.
+						Orientado a resultados y aprendizaje continuo.
 					</p>
 					<div class="know-me__info">
 						<table class="know-me__container-info">
@@ -272,7 +266,11 @@
 							</tr>
 							<tr>
 								<th class="know-me__item"><strong>Email</strong></th>
-								<td class="know-me__field">antmarame@gmail.com</td>
+								<td class="know-me__field">aenriquemartinez@gmail.com</td>
+							</tr>
+							<tr>
+								<th class="know-me__item"><strong>Idiomas</strong></th>
+								<td class="know-me__field">Inglés B2 · Francés A2</td>
 							</tr>
 							<tr>
 								<th class="know-me__item"><strong>Aspiración</strong></th>
@@ -327,6 +325,71 @@
 					</a>
 				</div>
 			</section>
+			<section class="skills" id="habilidades">
+				<div class="skills__container">
+					<h2 class="know-me__title">Habilidades</h2>
+					<div class="skills__grid">
+						<div class="skills__card">
+							<h3 class="skills__card-title">
+								<i class="fa-solid fa-server"></i> Backend
+							</h3>
+							<div class="skills__tags">
+								<span class="skills__tag">FastAPI (Python)</span>
+								<span class="skills__tag">Flask (Python)</span>
+								<span class="skills__tag">Laravel (PHP)</span>
+								<span class="skills__tag">APIs REST</span>
+								<span class="skills__tag">JWT · RBAC</span>
+								<span class="skills__tag">Swagger / OpenAPI</span>
+							</div>
+						</div>
+						<div class="skills__card">
+							<h3 class="skills__card-title">
+								<i class="fa-solid fa-display"></i> Frontend
+							</h3>
+							<div class="skills__tags">
+								<span class="skills__tag">React</span>
+								<span class="skills__tag">JavaScript</span>
+								<span class="skills__tag">HTML5 · CSS3</span>
+								<span class="skills__tag">Tailwind CSS</span>
+							</div>
+						</div>
+						<div class="skills__card">
+							<h3 class="skills__card-title">
+								<i class="fa-solid fa-database"></i> Bases de Datos
+							</h3>
+							<div class="skills__tags">
+								<span class="skills__tag">PostgreSQL</span>
+								<span class="skills__tag">MySQL</span>
+								<span class="skills__tag">SQL Server</span>
+								<span class="skills__tag">SQLAlchemy ORM</span>
+							</div>
+						</div>
+						<div class="skills__card">
+							<h3 class="skills__card-title">
+								<i class="fa-solid fa-cloud"></i> Cloud & DevOps
+							</h3>
+							<div class="skills__tags">
+								<span class="skills__tag">OCI (Oracle Cloud)</span>
+								<span class="skills__tag">Microsoft Azure</span>
+								<span class="skills__tag">Kubernetes</span>
+								<span class="skills__tag">Docker</span>
+								<span class="skills__tag">Uvicorn</span>
+							</div>
+						</div>
+						<div class="skills__card">
+							<h3 class="skills__card-title">
+								<i class="fa-solid fa-flask-vial"></i> Testing & Herramientas
+							</h3>
+							<div class="skills__tags">
+								<span class="skills__tag">Pytest</span>
+								<span class="skills__tag">Git · GitHub</span>
+								<span class="skills__tag">Scrum · Trello</span>
+								<span class="skills__tag">Claude Code · Copilot</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
 			<section class="curriculum" id="cv">
 				<div class="curriculum__container">
 					<h2 class="know-me__title">Curriculum</h2>
@@ -355,20 +418,20 @@
 							</div>
 							<div class="curriculum__content_left2 curriculum__content_item">
 								<h4 class="curriculum__content_title">
-									Institución Universitaria ITSA
+									Institución Universitaria de Barranquilla
 								</h4>
 								<span class="curriculum__content_text"
-									>Ingenieria Mecatronica</span
+									>Ingeniería Mecatrónica</span
 								>
 								<span class="curriculum__content_date">2012-2014</span>
 								<span class="curriculum__content_text"
 									>Tecnólogo Electrónico</span
 								>
-								<span class="curriculum__content_date">2010-2012</span>
+								<span class="curriculum__content_date">2010-2011</span>
 								<span class="curriculum__content_text"
-									>Tecnico Electrónico</span
+									>Técnico Electrónico</span
 								>
-								<span class="curriculum__content_date">2008-2011</span>
+								<span class="curriculum__content_date">2008-2009</span>
 								<div class="curriculum__content_connector1">
 									<div class="curriculum__content-circle circle_right"></div>
 								</div>
@@ -380,17 +443,37 @@
 							<!--Experiencia -->
 							<h3 class="curriculum__title">Experiencia</h3>
 							<div
-								data-modal-open="experience1"
+								data-modal-open="experience-cultura"
 								class="curriculum__content_rigth2 curriculum__content_item curriculum__content-details"
 							>
-								<h4 class="curriculum__content_title">
-									Desarrollador Backend Junior
-								</h4>
-								<span class="curriculum__content_text">Proyecto Freelance</span>
-								<span class="curriculum__content_date">Actualmente</span>
+								<h4 class="curriculum__content_title">Desarrollador Backend</h4>
+								<span class="curriculum__content_text">Ministerio de Cultura</span>
+								<span class="curriculum__content_date">Mar 2026 – Presente</span>
 								<button class="curriculum__see-more">
 									Ver más <i class="fa-solid fa-arrow-right"></i>
 								</button>
+								<div class="curriculum__content_connector2">
+									<div class="curriculum__content-circle circle_left"></div>
+								</div>
+							</div>
+							<div
+								data-modal-open="experience-sda"
+								class="curriculum__content_rigth2 curriculum__content_item curriculum__content-details"
+							>
+								<h4 class="curriculum__content_title">Desarrollador Backend</h4>
+								<span class="curriculum__content_text">Secretaría de Ambiente de Bogotá (SDA)</span>
+								<span class="curriculum__content_date">Dic 2025 – Presente</span>
+								<button class="curriculum__see-more">
+									Ver más <i class="fa-solid fa-arrow-right"></i>
+								</button>
+								<div class="curriculum__content_connector2">
+									<div class="curriculum__content-circle circle_left"></div>
+								</div>
+							</div>
+							<div class="curriculum__content_rigth2 curriculum__content_item">
+								<h4 class="curriculum__content_title">Desarrollador Backend</h4>
+								<span class="curriculum__content_text">INVIAS</span>
+								<span class="curriculum__content_date">Sep – Nov 2025</span>
 								<div class="curriculum__content_connector2">
 									<div class="curriculum__content-circle circle_left"></div>
 								</div>
@@ -403,9 +486,9 @@
 									Operador JR de Centro de Operaciones de Red
 								</h4>
 								<span class="curriculum__content_text"
-									>Caribe Mar de la Costa S.A.S. E.S.P</span
+									>Afinia S.A. E.S.P. – Grupo EPM</span
 								>
-								<span class="curriculum__content_date">2020-2025</span>
+								<span class="curriculum__content_date">Oct 2020 – Jun 2025</span>
 								<button class="curriculum__see-more">
 									Ver más <i class="fa-solid fa-arrow-right"></i>
 								</button>
@@ -537,7 +620,7 @@
 				<a
 					target="_blank"
 					class="footer__social_networks"
-					href="mailto:antmarame@gmail.com"
+					href="mailto:aenriquemartinez@gmail.com"
 					><i class="fa-solid fa-envelope"></i>
 					<span class="overlay__links"></span>
 				</a>
@@ -712,76 +795,118 @@
 				</div>
 			</div>
 		</div>
-		<!-- Experiencia modal 1-->
-		<div class="experience-modal" id="experience1">
+		<!-- Experiencia modal — SDA -->
+		<div class="experience-modal" id="experience-sda">
 			<div class="experience-modal__content">
 				<button
 					data-modal-close="close-details"
 					class="experience-modal__close"
-					id="close-details"
 					aria-label="Cerrar"
 				>
 					<i class="fa-solid fa-xmark"></i>
 				</button>
 				<div class="experience-modal__body">
-					<h3 class="experience-modal__title">Proyecto Freelance</h3>
+					<h3 class="experience-modal__title">Secretaría de Ambiente de Bogotá (SDA)</h3>
 					<div class="experience-modal__section">
-						<h4>💼 Desarrollador Backend Junior</h4>
+						<h4>💼 Desarrollador Backend</h4>
 						<p>
-							Diseñé e implementé soluciones backend personalizadas para un
-							cliente independiente, optimizando procesos internos y mejorando
-							la eficiencia operativa de su negocio.
+							Desarrollo backend con FastAPI para sistema de gestión presupuestal
+							del distrito, implementando arquitectura de microservicios desplegada
+							en OCI con Kubernetes.
 						</p>
-						<p>📅 Septiembre 2025 - Actualidad | Remoto</p>
+						<p>📅 Diciembre 2025 – Presente | Bogotá, Colombia (Remoto)</p>
 					</div>
 					<div class="experience-modal__section">
 						<h4>📈 Logros</h4>
 						<ul>
 							<li>
-								Desarrollé <strong>aplicaciones CRUD con FastAPI</strong>,
-								logrando reducir los tiempos de respuesta en un
-								<strong>30%</strong> y facilitando la gestión de datos del
-								cliente.
+								Diseñé e implementé <strong>APIs REST robustas con FastAPI</strong>
+								para un sistema de gestión presupuestal a nivel distrital.
 							</li>
 							<li>
-								Integré <strong>APIs RESTful con PostgreSQL</strong>,
-								garantizando una comunicación eficiente entre servicios y
-								mejorando la escalabilidad del sistema.
+								Diseñé y optimicé esquemas de <strong>bases de datos PostgreSQL</strong>:
+								vistas SQL, índices y relaciones complejas.
 							</li>
 							<li>
-								Implementé
-								<strong>validaciones avanzadas con Pydantic v2</strong>,
-								asegurando integridad de datos, tipado estricto y un manejo
-								robusto de errores.
+								Implementé <strong>autenticación JWT</strong>, middleware de autorización
+								y control de acceso RBAC.
 							</li>
 							<li>
-								Configuré
-								<strong>relaciones entre tablas complejas</strong> (uno a muchos
-								y muchos a muchos), optimizando consultas y reduciendo la
-								duplicidad de información.
+								Desplegué y administré <strong>arquitectura de 5 microservicios en OCI
+								con Kubernetes</strong>, asegurando alta disponibilidad.
 							</li>
 							<li>
-								Desarrollé un <strong>microservicio SMTP</strong> para el envío
-								automatizado de notificaciones y alertas al usuario final.
+								Configuré Docker, Uvicorn y herramientas de monitoreo para entorno
+								de producción.
 							</li>
 							<li>
-								Gestioné de forma autónoma el ciclo completo de desarrollo
-								(análisis, diseño, desarrollo y despliegue), cumpliendo los
-								hitos del proyecto con un
-								<strong
-									>100% de puntualidad y alta satisfacción del cliente</strong
-								>.
+								Documenté todas las APIs con <strong>Swagger/OpenAPI</strong> para
+								facilitar la integración entre equipos.
 							</li>
 						</ul>
 					</div>
 					<div class="experience-modal__section">
 						<h4>⚙️ Tecnologías y herramientas</h4>
 						<ul>
-							<li>Laravel 10 (PHP)</li>
-							<li>Laravel Breeze</li>
-							<li>Blade Templates + TailwindCSS</li>
-							<li>MySQL</li>
-							<li>Composer y NPM</li>
+							<li>Python · FastAPI · Pydantic</li>
+							<li>PostgreSQL · SQLAlchemy</li>
+							<li>JWT · RBAC</li>
+							<li>OCI · Kubernetes · Docker · Uvicorn</li>
+							<li>Swagger / OpenAPI</li>
+							<li>Scrum · Trello · Git / GitHub</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Experiencia modal — Ministerio de Cultura -->
+		<div class="experience-modal" id="experience-cultura">
+			<div class="experience-modal__content">
+				<button
+					data-modal-close="close-details"
+					class="experience-modal__close"
+					aria-label="Cerrar"
+				>
+					<i class="fa-solid fa-xmark"></i>
+				</button>
+				<div class="experience-modal__body">
+					<h3 class="experience-modal__title">Ministerio de Cultura</h3>
+					<div class="experience-modal__section">
+						<h4>💼 Desarrollador Backend</h4>
+						<p>
+							Desarrollo y mantenimiento de servicios RESTful con Flask y SQL Server,
+							incluyendo corrección de bugs, testing automatizado y despliegue en Azure.
+						</p>
+						<p>📅 Marzo 2026 – Presente | Bogotá, Colombia (Remoto)</p>
+					</div>
+					<div class="experience-modal__section">
+						<h4>📈 Logros</h4>
+						<ul>
+							<li>
+								Desarrollé y mantuve <strong>servicios RESTful con Flask</strong>
+								integrados a bases de datos SQL Server.
+							</li>
+							<li>
+								Implementé <strong>testing automatizado con Pytest</strong>,
+								reduciendo regresiones en producción.
+							</li>
+							<li>
+								Realicé debugging en producción, identificando y corrigiendo
+								errores críticos con rapidez.
+							</li>
+							<li>
+								Desplegué servicios en <strong>Microsoft Azure</strong>,
+								asegurando continuidad y disponibilidad del sistema.
+							</li>
+						</ul>
+					</div>
+					<div class="experience-modal__section">
+						<h4>⚙️ Tecnologías y herramientas</h4>
+						<ul>
+							<li>Python · Flask</li>
+							<li>SQL Server</li>
+							<li>Pytest</li>
+							<li>Microsoft Azure</li>
 							<li>Git / GitHub</li>
 						</ul>
 					</div>

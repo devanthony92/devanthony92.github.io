@@ -301,6 +301,24 @@
 		margin-top: 1.5rem;
 	}
 }
+/* === SKILLS RESPONSIVE (768px) === */
+@media (max-width: 768px) {
+	.skills {
+		padding: 0 20px;
+	}
+
+	.skills__grid {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.skills__card {
+		width: 100%;
+		max-width: 100%;
+		flex: none;
+	}
+}
+
 /* === CURRICULUM RESPONSIVE (768px) === */
 @media (max-width: 768px) {
 	/* Se elimina la línea y los conectores */
