@@ -5,7 +5,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<meta
 			name="description"
-			content="Portafolio de Anthony Martínez – Full Stack Developer especializado en APIs REST y microservicios con FastAPI, Flask y Laravel, y despliegue en cloud con OCI y Kubernetes."
+			content="Portafolio de Anthony Martínez – Full Stack Developer especializado en APIs REST y microservicios con FastAPI y Flask, bases de datos relacionales y despliegue en cloud con OCI, Azure, AWS y Kubernetes."
 		/>
 		<meta
 			property="og:title"
@@ -13,14 +13,14 @@
 		/>
 		<meta
 			property="og:description"
-			content="Portafolio profesional de Anthony Martínez - Full Stack Developer especializado en .NET y arquitectura limpia."
+			content="Portafolio profesional de Anthony Martínez - Full Stack Developer especializado en APIs REST y microservicios con Python (FastAPI, Flask) y despliegue en cloud."
 		/>
 		<meta property="og:type" content="website" />
 		<meta name="author" content="Anthony Martínez" />
 		<title>Full Stack Developer | Anthony Martínez</title>
 		<meta
 			name="keywords"
-			content="FastAPI, Flask, Laravel, Python, PHP, PostgreSQL, Kubernetes, Docker, OCI, Azure, APIs REST, Full Stack Developer, Backend Developer"
+			content="FastAPI, Flask, Laravel, Python, PHP, PostgreSQL, SQL Server, MySQL, Oracle Database, Kubernetes, Docker, OCI, Azure, AWS, APIs REST, SIG, Full Stack Developer, Backend Developer"
 		/>
 		<link
 			rel="stylesheet"
@@ -83,6 +83,83 @@
 						</p>
 
 						<div class="projects__grid">
+							<!-- Proyecto Trama -->
+							<article class="project-card">
+								<div data-modal-open="project3" class="project-card__img">
+									<img
+										class=".project-card__img-img"
+										src="./img/proyecto3.png"
+										alt="Trama – E-commerce de ropa al detal y por mayor"
+									/>
+								</div>
+								<div class="project-card__content">
+									<h3 class="project-card__title">
+										Trama – E-commerce B2C + Mayorista
+									</h3>
+									<p class="project-card__description">
+										Tienda de ropa full stack con dos formas de compra: individual y
+										por volumen para mayoristas, con precios por escala de cantidad
+										calculados en el servidor. Incluye catálogo con filtros,
+										carrito para invitados y usuarios, checkout con Mercado Pago
+										(simulado en el demo) o pago contra entrega, cuenta con pedidos, favoritos y listas de
+										compra, y un programa mayorista con solicitud y beneficios. El
+										frontend en React consume una API REST en FastAPI con
+										PostgreSQL, separada en dos repositorios y desplegada en la
+										nube.
+									</p>
+									<div class="project-card__tags">
+										<span class="project-card__tags-span">React 19 · Vite</span>
+										<span class="project-card__tags-span">TanStack Query</span>
+										<span class="project-card__tags-span">SCSS (BEM)</span>
+										<span class="project-card__tags-span"
+											>FastAPI (Python)</span
+										>
+										<span class="project-card__tags-span">PostgreSQL</span>
+										<span class="project-card__tags-span"
+											>SQLAlchemy · Alembic</span
+										>
+										<span class="project-card__tags-span">JWT</span>
+										<span class="project-card__tags-span"
+											>Vitest · Pytest</span
+										>
+									</div>
+									<div class=".project-card__links">
+										<button
+											class="btn-outline"
+											type="button"
+											onclick="
+												window.open(
+													'https://github.com/devanthony92/ecommerce',
+													'_blank',
+												)
+											"
+										>
+											Repo Frontend
+										</button>
+										<button
+											class="btn-outline"
+											type="button"
+											onclick="
+												window.open(
+													'https://github.com/devanthony92/ecommerce-backend',
+													'_blank',
+												)
+											"
+										>
+											Repo Backend
+										</button>
+										<button
+											class="btn-outline"
+											type="button"
+											onclick="
+												window.open('https://devama.duckdns.org', '_blank')
+											"
+										>
+											Ver Tienda
+										</button>
+									</div>
+								</div>
+							</article>
 							<!-- Proyecto 1 -->
 							<article class="project-card">
 								<div data-modal-open="project1" class="project-card__img">
@@ -269,13 +346,13 @@
 						<span class="know-me__description-span"
 							>Hola, Soy Anthony Martinez</span
 						>
-						Desarrollador Full Stack especializado en backend con FastAPI, Flask
-						y Laravel. Cuento con experiencia en arquitectura de APIs REST,
-						microservicios, optimización de bases de datos PostgreSQL y
-						despliegue en cloud con OCI y Kubernetes. Ingeniero Mecatrónico que
-						migró al desarrollo de software combinando rigor técnico, liderazgo
-						y compromiso con la calidad. Orientado a resultados y aprendizaje
-						continuo.
+						Desarrollador Full Stack e Ingeniero Mecatrónico con más de 2 años
+						de experiencia diseñando APIs REST y microservicios, y optimizando
+						bases de datos relacionales. Especializado en Python (FastAPI,
+						Flask), React y despliegues en la nube con Kubernetes y OCI. Me
+						destaco por aplicar rigor técnico y metodologías ágiles para
+						convertir problemas complejos en soluciones de software escalables,
+						eficientes y de alta calidad.
 					</p>
 					<div class="know-me__info">
 						<table class="know-me__container-info">
@@ -301,9 +378,7 @@
 							<tr>
 								<th class="know-me__item"><strong>Aspiración</strong></th>
 								<td class="know-me__field">
-									<span class="know-me__objetive"
-										>Senior Backend Developer</span
-									>
+									<span class="know-me__objetive">Software Architect</span>
 								</td>
 							</tr>
 						</table>
@@ -366,6 +441,7 @@
 								<span class="skills__tag">APIs REST</span>
 								<span class="skills__tag">JWT · RBAC</span>
 								<span class="skills__tag">Swagger / OpenAPI</span>
+								<span class="skills__tag">Python</span>
 							</div>
 						</div>
 						<div class="skills__card">
@@ -374,6 +450,7 @@
 							</h3>
 							<div class="skills__tags">
 								<span class="skills__tag">React</span>
+								<span class="skills__tag">Angular</span>
 								<span class="skills__tag">JavaScript</span>
 								<span class="skills__tag">HTML5 · CSS3</span>
 								<span class="skills__tag">Tailwind CSS</span>
@@ -387,7 +464,9 @@
 								<span class="skills__tag">PostgreSQL</span>
 								<span class="skills__tag">MySQL</span>
 								<span class="skills__tag">SQL Server</span>
+								<span class="skills__tag">Oracle Database</span>
 								<span class="skills__tag">SQLAlchemy ORM</span>
+								<span class="skills__tag">Mongo DB</span>
 							</div>
 						</div>
 						<div class="skills__card">
@@ -397,6 +476,7 @@
 							<div class="skills__tags">
 								<span class="skills__tag">OCI (Oracle Cloud)</span>
 								<span class="skills__tag">Microsoft Azure</span>
+								<span class="skills__tag">GCP (Google Cloud Platform)</span>
 								<span class="skills__tag">Kubernetes</span>
 								<span class="skills__tag">Docker</span>
 								<span class="skills__tag">Uvicorn</span>
@@ -410,7 +490,7 @@
 								<span class="skills__tag">Pytest</span>
 								<span class="skills__tag">Git · GitHub</span>
 								<span class="skills__tag">Scrum · Trello</span>
-								<span class="skills__tag">Claude Code · Copilot</span>
+								<span class="skills__tag">Claude Code · Copilot · Codex</span>
 							</div>
 						</div>
 					</div>
@@ -428,6 +508,7 @@
 								<span class="curriculum__content_text"
 									>Bootcamp de desarrollo Web</span
 								>
+								<span class="curriculum__content_date">Completado</span>
 								<div class="curriculum__content_connector1">
 									<div class="curriculum__content-circle circle_right"></div>
 								</div>
@@ -436,9 +517,14 @@
 								<h4 class="curriculum__content_title">Platzi</h4>
 								<span class="curriculum__content_text">Python</span>
 								<span class="curriculum__content_text">Claude Code</span>
+								<span class="curriculum__content_text">Prompt Engineering</span>
+								<span class="curriculum__content_text"
+									>Introducción a AWS: Fundamentos de Cloud Computing</span
+								>
 								<span class="curriculum__content_text">Laravel</span>
 								<span class="curriculum__content_text">MariaDB y MySQL</span>
 								<span class="curriculum__content_text">PHP</span>
+								<span class="curriculum__content_text">PHP Avanzado</span>
 								<span class="curriculum__content_text">Frontend Developer</span>
 								<div class="curriculum__content_connector1">
 									<div class="curriculum__content-circle circle_right"></div>
@@ -471,30 +557,12 @@
 							<!--Experiencia -->
 							<h3 class="curriculum__title">Experiencia</h3>
 							<div
-								data-modal-open="experience-cultura"
-								class="curriculum__content_rigth2 curriculum__content_item curriculum__content-details"
-							>
-								<h4 class="curriculum__content_title">Desarrollador Backend</h4>
-								<span class="curriculum__content_text"
-									>Ministerio de Cultura</span
-								>
-								<span class="curriculum__content_date"
-									>Mar 2026 – Presente</span
-								>
-								<button class="curriculum__see-more">
-									Ver más <i class="fa-solid fa-arrow-right"></i>
-								</button>
-								<div class="curriculum__content_connector2">
-									<div class="curriculum__content-circle circle_left"></div>
-								</div>
-							</div>
-							<div
 								data-modal-open="experience-sda"
 								class="curriculum__content_rigth2 curriculum__content_item curriculum__content-details"
 							>
 								<h4 class="curriculum__content_title">Desarrollador Backend</h4>
 								<span class="curriculum__content_text"
-									>Secretaría de Ambiente de Bogotá (SDA)</span
+									>Secretaría de Ambiente de Bogotá</span
 								>
 								<span class="curriculum__content_date"
 									>Dic 2025 – Presente</span
@@ -506,10 +574,22 @@
 									<div class="curriculum__content-circle circle_left"></div>
 								</div>
 							</div>
-							<div class="curriculum__content_rigth2 curriculum__content_item">
-								<h4 class="curriculum__content_title">Desarrollador Backend</h4>
-								<span class="curriculum__content_text">INVIAS</span>
-								<span class="curriculum__content_date">Sep – Nov 2025</span>
+							<div
+								data-modal-open="experience-afrosig"
+								class="curriculum__content_rigth2 curriculum__content_item curriculum__content-details"
+							>
+								<h4 class="curriculum__content_title">
+									Desarrollador de Software Backend
+								</h4>
+								<span class="curriculum__content_text"
+									>Corporación AfroSIG</span
+								>
+								<span class="curriculum__content_date"
+									>Jun 2024 – Jul 2026</span
+								>
+								<button class="curriculum__see-more">
+									Ver más <i class="fa-solid fa-arrow-right"></i>
+								</button>
 								<div class="curriculum__content_connector2">
 									<div class="curriculum__content-circle circle_left"></div>
 								</div>
@@ -519,7 +599,7 @@
 								class="curriculum__content_rigth2 curriculum__content_item curriculum__content-details"
 							>
 								<h4 class="curriculum__content_title">
-									Operador JR de Centro de Operaciones de Red
+									Operador Junior de Sala de Control
 								</h4>
 								<span class="curriculum__content_text"
 									>Afinia S.A. E.S.P. – Grupo EPM</span
@@ -534,16 +614,6 @@
 									<div class="curriculum__content-circle circle_left"></div>
 								</div>
 							</div>
-							<div class="curriculum__content_rigth2 curriculum__content_item">
-								<h4 class="curriculum__content_title">
-									Técnico Operador Centro de Operaciones de Red
-								</h4>
-								<span class="curriculum__content_text">Electricaribe</span>
-								<span class="curriculum__content_date">2014-2020</span>
-								<div class="curriculum__content_connector2">
-									<div class="curriculum__content-circle circle_left"></div>
-								</div>
-							</div>
 						</div>
 					</div>
 				</div>
@@ -553,12 +623,12 @@
 					<h2 class="know-me__title">Contacto</h2>
 					<div class="row">
 						<form
-						class="form"
-						id="contact-form"
-						action="https://api.web3forms.com/submit"
-						method="POST"
-						novalidate
-					>
+							class="form"
+							id="contact-form"
+							action="https://api.web3forms.com/submit"
+							method="POST"
+							novalidate
+						>
 							<h3 class="form__title">Envíame un mensaje</h3>
 
 							<!-- Web3Forms config -->
@@ -680,6 +750,88 @@
 				</a>
 			</div>
 		</footer>
+		<!-- Modal con detalles del proyecto Trama -->
+		<div class="project-modal" id="project3">
+			<div class="project-modal__content">
+				<button
+					data-modal-close="close-details"
+					class="project-modal__close"
+					aria-label="Cerrar"
+				>
+					<i class="fa-solid fa-xmark"></i>
+				</button>
+				<div class="project-modal__body">
+					<h3 class="project-modal__title">
+						Trama – E-commerce B2C + Mayorista
+					</h3>
+					<div class="project-modal__section">
+						<h4>🎯 Objetivo y problema resuelto</h4>
+						<p>
+							Una tienda de ropa que atiende en el mismo sitio a dos tipos de
+							cliente: quien compra una sola prenda y el negocio que surte su
+							tienda por volumen. El reto era que cada usuario viera el precio
+							correcto según su perfil, la promoción vigente y la cantidad, sin
+							duplicar lógica entre cliente y servidor. Por eso el backend calcula
+							todos los precios y el frontend solo explica por qué ves cada uno.
+						</p>
+					</div>
+					<div class="project-modal__section">
+						<h4>⚙️ Tecnologías y herramientas</h4>
+						<ul>
+							<li>
+								Frontend: React 19, Vite, React Router, TanStack Query, Axios,
+								SCSS con BEM estricto
+							</li>
+							<li>
+								Backend: FastAPI (Python), PostgreSQL, SQLAlchemy 2, Alembic,
+								Pydantic, Argon2, PyJWT
+							</li>
+							<li>
+								Integraciones: Mercado Pago Checkout Pro (simulada en el demo) y
+								API de Unsplash
+							</li>
+							<li>
+								Calidad: Vitest, Testing Library, axe-core, Pytest, Ruff, Oxlint
+								y Stylelint
+							</li>
+							<li>Despliegue: Nginx, PM2 y HTTPS con Let's Encrypt</li>
+						</ul>
+					</div>
+					<div class="project-modal__section">
+						<h4>📈 Funcionalidades destacadas</h4>
+						<ul>
+							<li>
+								<strong>Precios dinámicos calculados en el servidor</strong>:
+								público, promoción y escalas por cantidad para mayoristas, con
+								cotización al cambiar la cantidad.
+							</li>
+							<li>
+								Carrito para invitados y usuarios que se fusiona al iniciar
+								sesión, con incentivos de envío gratis y de la siguiente escala.
+							</li>
+							<li>
+								Checkout con dirección, envío calculado por el backend y pago con
+								Mercado Pago (simulado en el demo) o contra entrega.
+							</li>
+							<li>
+								<strong>Programa mayorista</strong>: solicitud con estados,
+								pedido mínimo, panel de beneficios y pedido rápido por
+								referencia.
+							</li>
+							<li>
+								Autenticación con JWT, rutas protegidas y cuenta con pedidos,
+								favoritos, listas de compra e inspiraciones guardadas.
+							</li>
+							<li>
+								<strong>Accesibilidad</strong>: navegación por teclado, foco
+								gestionado en modales y contraste WCAG AA, auditado con axe en 20
+								páginas.
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
 		<!-- Modal con detalles del proyecto 1 -->
 		<div class="project-modal" id="project1">
 			<div class="project-modal__content">
@@ -877,68 +1029,78 @@
 				</button>
 				<div class="experience-modal__body">
 					<h3 class="experience-modal__title">
-						Secretaría de Ambiente de Bogotá (SDA)
+						Secretaría de Ambiente de Bogotá
 					</h3>
 					<div class="experience-modal__section">
 						<h4>💼 Desarrollador Backend</h4>
 						<p>
-							Desarrollo backend con FastAPI para sistema de gestión
-							presupuestal del distrito, implementando arquitectura de
-							microservicios desplegada en OCI con Kubernetes.
+							Desarrollo backend con FastAPI para el sistema de gestión
+							presupuestal de la entidad, con una arquitectura de microservicios
+							desplegada en OCI con Kubernetes.
 						</p>
-						<p>📅 Diciembre 2025 – Presente | Bogotá, Colombia (Remoto)</p>
+						<p>📅 Diciembre 2025 – Presente | Bogotá, Colombia (En remoto)</p>
 					</div>
 					<div class="experience-modal__section">
 						<h4>📈 Logros</h4>
 						<ul>
 							<li>
-								Diseñé e implementé
-								<strong>APIs REST robustas con FastAPI</strong>
-								para un sistema de gestión presupuestal a nivel distrital.
+								Diseñé e implementé <strong>APIs REST con FastAPI</strong> para
+								el sistema de gestión presupuestal de la entidad, documentadas
+								con <strong>Swagger/OpenAPI</strong> para su integración con el
+								frontend y terceros.
 							</li>
 							<li>
-								Diseñé y optimicé esquemas de
-								<strong>bases de datos PostgreSQL</strong>: vistas SQL, índices
-								y relaciones complejas.
+								Optimicé bases de datos <strong>PostgreSQL</strong> con
+								esquemas, vistas especializadas e índices, y reduje el tiempo de
+								respuesta de los reportes de alta carga de
+								<strong>6 segundos o más a cerca de 2 segundos</strong>.
 							</li>
 							<li>
-								Implementé <strong>autenticación JWT</strong>, middleware de
-								autorización y control de acceso RBAC.
+								Implementé <strong>autenticación JWT</strong>, middlewares
+								personalizados y control de acceso basado en roles (RBAC).
 							</li>
 							<li>
-								Desplegué y administré
+								Desplegué en
 								<strong
-									>arquitectura de 5 microservicios en OCI con
-									Kubernetes</strong
-								>, asegurando alta disponibilidad.
+									>Oracle Cloud Infrastructure (OCI) con Kubernetes</strong
+								>
+								una arquitectura de 5 microservicios (auth, core, notifications,
+								storage, front), contenerizados con Docker y servidos con
+								Uvicorn, dentro del nivel always-free sin comprometer la
+								escalabilidad.
 							</li>
 							<li>
-								Configuré Docker, Uvicorn y herramientas de monitoreo para
-								entorno de producción.
+								Escribí <strong>pruebas automatizadas con Pytest</strong> para
+								validar nuevas funcionalidades y correcciones.
 							</li>
 							<li>
-								Documenté todas las APIs con
-								<strong>Swagger/OpenAPI</strong> para facilitar la integración
-								entre equipos.
+								Trabajé con metodología ágil (Scrum) en sprints de 2 semanas,
+								con planificación, daily standups y seguimiento de tareas en
+								Trello.
+							</li>
+							<li>
+								Aceleré el desarrollo con IA (Claude Code y GitHub Copilot) para
+								generar, revisar y documentar código.
 							</li>
 						</ul>
 					</div>
 					<div class="experience-modal__section">
 						<h4>⚙️ Tecnologías y herramientas</h4>
 						<ul>
-							<li>Python · FastAPI · Pydantic</li>
+							<li>Python · FastAPI</li>
 							<li>PostgreSQL · SQLAlchemy</li>
 							<li>JWT · RBAC</li>
 							<li>OCI · Kubernetes · Docker · Uvicorn</li>
-							<li>Swagger / OpenAPI</li>
+							<li>Swagger / OpenAPI · Pytest</li>
 							<li>Scrum · Trello · Git / GitHub</li>
+							<li>Claude Code · GitHub Copilot</li>
 						</ul>
 					</div>
 				</div>
 			</div>
 		</div>
-		<!-- Experiencia modal — Ministerio de Cultura -->
-		<div class="experience-modal" id="experience-cultura">
+		<!-- Experiencia modal — AfroSIG -->
+		<div class="experience-modal" id="experience-afrosig">
 			<div class="experience-modal__content">
 				<button
 					data-modal-close="close-details"
@@ -948,46 +1110,62 @@
 					<i class="fa-solid fa-xmark"></i>
 				</button>
 				<div class="experience-modal__body">
-					<h3 class="experience-modal__title">Ministerio de Cultura</h3>
+					<h3 class="experience-modal__title">Corporación AfroSIG</h3>
 					<div class="experience-modal__section">
-						<h4>💼 Desarrollador Backend</h4>
+						<h4>💼 Desarrollador de Software Backend</h4>
 						<p>
-							Desarrollo y mantenimiento de servicios RESTful con Flask y SQL
-							Server, incluyendo corrección de bugs, testing automatizado y
-							despliegue en Azure.
+							Desarrollo backend de aplicaciones web, APIs REST y bases de datos
+							relacionales, con despliegues en varias nubes y desarrollo en
+							Python para Sistemas de Información Geográfica (SIG).
 						</p>
-						<p>📅 Marzo 2026 – Presente | Bogotá, Colombia (Remoto)</p>
+						<p>📅 Junio 2024 – Julio 2026 | Quibdó, Colombia (En remoto)</p>
 					</div>
 					<div class="experience-modal__section">
 						<h4>📈 Logros</h4>
 						<ul>
 							<li>
-								Desarrollé y mantuve
-								<strong>servicios RESTful con Flask</strong>
-								integrados a bases de datos SQL Server.
+								Diseñé, desarrollé y mantuve aplicaciones web y
+								<strong>APIs REST en Python con Flask</strong> (SQLAlchemy,
+								JWT), aplicando buenas prácticas de arquitectura y control de
+								versiones con Git.
 							</li>
 							<li>
-								Implementé <strong>testing automatizado con Pytest</strong>,
-								reduciendo regresiones en producción.
+								Diseñé, administré y optimicé bases de datos
+								<strong>Oracle Database, PostgreSQL, MySQL y SQL Server</strong
+								>: modelado de datos, consultas SQL, procedimientos almacenados,
+								índices y afinamiento del rendimiento.
 							</li>
 							<li>
-								Realicé debugging en producción, identificando y corrigiendo
-								errores críticos con rapidez.
+								Desplegué y operé aplicaciones y bases de datos en
+								<strong>OCI, Microsoft Azure y Amazon Web Services (AWS)</strong
+								>: cómputo, almacenamiento y bases de datos gestionadas.
 							</li>
 							<li>
-								Desplegué servicios en <strong>Microsoft Azure</strong>,
-								asegurando continuidad y disponibilidad del sistema.
+								Integré sistemas mediante APIs y migré datos entre entornos
+								locales y de nube, garantizando la seguridad, disponibilidad e
+								integridad de la información.
+							</li>
+							<li>
+								Usé IA generativa (Claude Code y OpenAI Codex) para generar,
+								revisar, refactorizar y documentar código, y para automatizar
+								tareas de desarrollo.
+							</li>
+							<li>
+								Desarrollé código en
+								<strong
+									>Python para Sistemas de Información Geográfica (SIG)</strong
+								>.
 							</li>
 						</ul>
 					</div>
 					<div class="experience-modal__section">
 						<h4>⚙️ Tecnologías y herramientas</h4>
 						<ul>
-							<li>Python · Flask</li>
-							<li>SQL Server</li>
-							<li>Pytest</li>
-							<li>Microsoft Azure</li>
-							<li>Git / GitHub</li>
+							<li>Python · Flask · SQLAlchemy · JWT</li>
+							<li>Oracle Database · PostgreSQL · MySQL · SQL Server</li>
+							<li>OCI · Microsoft Azure · AWS</li>
+							<li>SIG (Sistemas de Información Geográfica)</li>
+							<li>Claude Code · OpenAI Codex · Git</li>
 						</ul>
 					</div>
 				</div>
@@ -1006,10 +1184,10 @@
 				</button>
 				<div class="experience-modal__body">
 					<h3 class="experience-modal__title">
-						Afinia S.A. E.S.P. - Grupo EPM
+						Afinia S.A. E.S.P. – Grupo EPM
 					</h3>
 					<div class="experience-modal__section">
-						<h4>💼 Operador Junior de Centro de Control</h4>
+						<h4>💼 Operador Junior de Sala de Control</h4>
 						<p>
 							Filial del Grupo EPM, encargada de la distribución y
 							comercialización de energía eléctrica en la región Caribe de
@@ -1026,39 +1204,25 @@
 						<h4>📈 Logros</h4>
 						<ul>
 							<li>
-								Monitoreé y operé sistemas SCADA para la gestión de redes
-								eléctricas, aplicando protocolos de seguridad y ejecutando
-								maniobras en tiempo real para mantener la confiabilidad del
-								sistema.
+								Lideré proyectos de mejora que redujeron en un
+								<strong>3%</strong> los tiempos de restablecimiento de la red.
 							</li>
 							<li>
-								Capacité y acompañé a más de 15 operadores, fortaleciendo la
-								cultura de seguridad, la precisión operativa y el cumplimiento
-								de indicadores técnicos del centro de control.
+								Capacité a <strong>13 colaboradores</strong> en operación de
+								sistemas SCADA y protocolos de seguridad.
 							</li>
 							<li>
-								Co-redacté y actualicé manuales operativos, estandarizando
-								procedimientos clave y logrando una reducción del 15% en errores
-								humanos en la operación diaria.
+								Redacté manuales de operación para estandarizar procesos en el
+								área.
 							</li>
 							<li>
-								Implementé mejoras en protocolos de respuesta y atención al
-								usuario, contribuyendo a una disminución del 2% en los tiempos
-								promedio de restablecimiento del servicio, mejorando la
-								continuidad energética.
+								Acompañé y apoyé constantemente a mi equipo de trabajo para
+								optimizar resultados.
 							</li>
 							<li>
-								Colaboré en la adopción de herramientas digitales y metodologías
-								de monitoreo avanzado, incrementando la trazabilidad de eventos
-								y la eficiencia en la toma de decisiones operativas.
-							</li>
-							<li>
-								Esta experiencia consolidó mis habilidades en gestión de
-								sistemas en tiempo real, liderazgo técnico, trabajo en equipo,
-								toma de decisiones bajo presión y análisis de datos operativos,
-								competencias que sentaron las bases para mi evolución hacia el
-								desarrollo backend y la automatización de procesos tecnológicos.
-								>.
+								Supervisé y operé la red de media y baja tensión en condiciones
+								normales y críticas, garantizando la continuidad y seguridad del
+								servicio.
 							</li>
 						</ul>
 					</div>
