@@ -266,30 +266,33 @@
 	.know-me__container-info,
 	.know-me__interest {
 		width: 100%;
+		min-width: 0;
 		max-width: 100%;
 		padding: 1rem;
 	}
 
 	.know-me_container-interest {
 		width: 100%;
-		justify-content: center;
 		margin: 0;
-		pad: 0;
+		padding: 0;
 		grid-template-columns: repeat(2, 1fr);
-		gap: var(--md);
+		column-gap: 1.5rem;
+		row-gap: 0.4rem;
 	}
 
 	.hobbies {
-		padding: 0.6rem;
+		padding: 0.8rem 0.4rem;
 		margin: 0;
 	}
 
 	.know-me__hobbie-icon {
-		font-size: 1.2rem;
+		width: 32px;
+		height: 32px;
+		font-size: 1.3rem;
 	}
 
 	.know-me__hobbie-name {
-		font-size: 0.75rem;
+		font-size: 1.3rem;
 	}
 
 	.know-me__download-button {

@@ -81,6 +81,33 @@
 	font-size: var(--sm);
 }
 
+/* Lista de viñetas ejecutivas para optimizar el espacio en Educación (Platzi) */
+.curriculum__content_list {
+	list-style: none;
+	margin-top: 0.8rem;
+	padding-left: 0;
+	display: flex;
+	flex-direction: column;
+	gap: 0.6rem;
+}
+
+.curriculum__content_list li {
+	position: relative;
+	padding-left: 1.6rem;
+	font-size: var(--sm);
+	line-height: 1.45;
+	color: rgba(255, 255, 255, 0.88);
+}
+
+.curriculum__content_list li::before {
+	content: "▹";
+	position: absolute;
+	left: 0;
+	top: 0;
+	color: var(--verde);
+	font-weight: bold;
+}
+
 .curriculum__content_connector1,
 .curriculum__content_connector2 {
 	height: 2px;
