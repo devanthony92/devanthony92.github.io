@@ -102,7 +102,9 @@
 										calculados en el servidor. Incluye catálogo con filtros,
 										carrito para invitados y usuarios, checkout con Mercado Pago
 										(simulado en el demo) o pago contra entrega, cuenta con pedidos, favoritos y listas de
-										compra, y un programa mayorista con solicitud y beneficios. El
+										compra, un programa mayorista con solicitud y beneficios, y un
+										asistente de compras con IA (Gemini) que recomienda productos
+										del catálogo y permite agregarlos al carrito desde el chat. El
 										frontend en React consume una API REST en FastAPI con
 										PostgreSQL, separada en dos repositorios y desplegada en la
 										nube.
@@ -119,6 +121,7 @@
 											>SQLAlchemy · Alembic</span
 										>
 										<span class="project-card__tags-span">JWT</span>
+										<span class="project-card__tags-span">Gemini API</span>
 										<span class="project-card__tags-span"
 											>Vitest · Pytest</span
 										>
@@ -324,7 +327,7 @@
 							target="_blank"
 							rel="noopener noreferrer"
 							class="footer__social_networks"
-							href="mailto:aenriquemartinez@gmail.com"
+							href="mailto:antmarame@gmail.com"
 							><i class="fa-solid fa-envelope"></i>
 							<span class="overlay__links"></span>
 						</a>
@@ -369,7 +372,7 @@
 							</tr>
 							<tr>
 								<th class="know-me__item"><strong>Email</strong></th>
-								<td class="know-me__field">aenriquemartinez@gmail.com</td>
+								<td class="know-me__field">antmarame@gmail.com</td>
 							</tr>
 							<tr>
 								<th class="know-me__item"><strong>Idiomas</strong></th>
@@ -743,7 +746,7 @@
 					target="_blank"
 					rel="noopener noreferrer"
 					class="footer__social_networks"
-					href="mailto:aenriquemartinez@gmail.com"
+					href="mailto:antmarame@gmail.com"
 					><i class="fa-solid fa-envelope"></i>
 					<span class="overlay__links"></span>
 				</a>
@@ -786,8 +789,8 @@
 								Pydantic, Argon2, PyJWT
 							</li>
 							<li>
-								Integraciones: Mercado Pago Checkout Pro (simulada en el demo) y
-								API de Unsplash
+								Integraciones: Gemini API (asistente de compras), Mercado Pago
+								Checkout Pro (simulada en el demo) y API de Unsplash
 							</li>
 							<li>
 								Calidad: Vitest, Testing Library, axe-core, Pytest, Ruff, Oxlint
@@ -816,6 +819,14 @@
 								<strong>Programa mayorista</strong>: solicitud con estados,
 								pedido mínimo, panel de beneficios y pedido rápido por
 								referencia.
+							</li>
+							<li>
+								<strong>Asistente de compras con IA</strong>: chat con Gemini
+								que responde con la información pública de la tienda y muestra
+								productos relacionados con talla y color para agregar al carrito.
+								Topes de uso por minuto y por día (por IP, usuario y globales)
+								controlados en el backend, sin guardar la conversación, y enlace
+								a un asesor por WhatsApp.
 							</li>
 							<li>
 								Autenticación con JWT, rutas protegidas y cuenta con pedidos,
